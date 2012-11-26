@@ -1,31 +1,34 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset=utf-8 />
-  <title> {% if page.title %} {{ page.title }} | {% endif %} John Doe, Photographer </title>
-  <link rel="stylesheet" href="/css/styles.css" />
-</head>
-<body>
-  <div id="main">
-    <header>
-      <h1>Sample Jekyll site.</h1>
-    <header>
-    <nav role="navigation">
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/portfolio/">Portfolio</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-      </ul>
-    </nav>
-    {{ content }}
-    <footer>
-      <p>@copy; John Doe Photography 2011 | All Rights Reserved. </p>
-    </footer>
-  </div>
-  <div>
-    {{page.layout}}
-    {{page.blah}}
-  </div>
-</body>
-</html>
+---
+layout: html
+---
+<article id="content" role="main">
+  {{ content }}
+</article>
+
+<nav id="main-menu" role="navigation">
+  <header>
+    <h2>Menu</h2>
+    <p>Source order: 2</p>
+  </header>
+  <a href="#">Alice</a> ★
+  <a href="#">Mad Hatter</a> ★
+  <a href="#">The Queen</a> ★
+  <a href="#">Tom Petty</a>
+</nav>
+
+<aside id="aside1">
+  <header>
+    <h2>Aside</h2>
+    <p>Source order: 3</p>
+  </header>
+  <p>‘Have some wine,’ the March Hare said in an encouraging tone.</p>
+</aside>
+
+<aside id="aside2">
+  <header>
+    <h2>Aside</h2>
+    <p>Source order: 4</p>
+  </header>
+  <p>‘Please would you tell me,’ said Alice, a little timidly, for she was not quite sure whether it was good manners for her to speak first, ‘why your cat grins like that?’</p>
+  <p>‘It’s a Cheshire cat,’ said the Duchess, ‘and that’s why. Pig!’</p>
+</aside>
