@@ -3,7 +3,7 @@
 $gutter-width: 10px;
 
 
-// Skip link styling
+/* Skip link */
 #skip-link {
   margin: 0;
 
@@ -18,7 +18,24 @@ $gutter-width: 10px;
   }
 }
 
-// Set a consistent padding around all containers
+/* Not good for accesablity, so try replacing this with other visual hooks. */
+a:focus {
+  outline: none;
+}
+
+#logo-name {
+  display: inline-block;
+}
+
+#logo {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px 0 0;
+  background: url("/images/design/logo-32.png") top center no-repeat transparent;
+}
+
+/* Consistent padding */
 #header,
 #content,
 #main-menu,
@@ -32,26 +49,18 @@ $gutter-width: 10px;
   padding: $gutter-width;
 }
 
-// Alternate border styling
+/* Alternate border */
 #header,
 #main-menu,
-#aside2 {
-  border: 1px solid #ccc;
-}
 #content,
 #aside1,
+#aside2,
 #footer {
-  border: 1px solid #09f;
+  border: 1px solid #ccc;
 }
 
-// Source-order meta info
+/* Source-order meta info */
 header h1,
 header h2 {
   display: inline;
-}
-header p {
-  display: inline;
-  text-transform: uppercase;
-  font-size: 0.8em;
-  color: #c00;
 }

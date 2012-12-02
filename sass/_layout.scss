@@ -10,9 +10,7 @@ $zen-column-count: 12;
 $zen-gutter-width: 20px;
 
 
-//
-// Skip link styling
-//
+/* Skip link */
 @media all and (min-width: 480px) {
   #skip-link a {
     position: absolute !important;
@@ -35,6 +33,7 @@ $zen-gutter-width: 20px;
   }
 }
 
+/* general layout */
 #header,
 #main,
 #footer {
@@ -42,7 +41,7 @@ $zen-gutter-width: 20px;
     left: auto;
     right: auto;
   }
-  max-width: 1600px;
+  max-width: 1140px;
 }
 
 #main {
@@ -61,11 +60,10 @@ $zen-gutter-width: 20px;
   }
 }
 
-//
-// Horizontal navigation bar
+/* Horizontal navigation bar */
 @media all and (min-width: 480px) {
   $zen-column-count: 1;
-  $navbar-height: 4em;
+  $navbar-height: 2.5em;
 
   #main {
     padding-top: $navbar-height;
@@ -77,6 +75,7 @@ $zen-gutter-width: 20px;
   }
 }
 
+/* 480px - 639px */
 @media all and (min-width: 480px) and (max-width: 639px) {
   $zen-column-count: 2;
 
@@ -92,6 +91,7 @@ $zen-gutter-width: 20px;
   }
 }
 
+/* 640px - 799px */
 @media all and (min-width: 640px) and (max-width: 799px) {
   $zen-column-count: 3;
 
@@ -107,6 +107,7 @@ $zen-gutter-width: 20px;
   }
 }
 
+/* 800px - 959px */
 @media all and (min-width: 800px) and (max-width: 959px) {
   $zen-column-count: 3;
 
@@ -122,6 +123,7 @@ $zen-gutter-width: 20px;
   }
 }
 
+/* 960px & over */
 @media all and (min-width: 960px) {
   $zen-column-count: 5;
 

@@ -1,1 +1,344 @@
-#skip-link{margin:0}#skip-link a,#skip-link a:visited{display:block;width:100%;padding:2px 0 3px 0;text-align:center;background-color:#666;color:#fff}#header,#content,#main-menu,#aside1,#aside2,#footer{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;padding:10px}#header,#main-menu,#aside2{border:1px solid #ccc}#content,#aside1,#footer{border:1px solid #09f}header h1,header h2{display:inline}header p{display:inline;text-transform:uppercase;font-size:0.8em;color:#c00}@media all and (min-width: 480px){#skip-link a{position:absolute !important;height:1px;width:1px;overflow:hidden;clip:rect(1px, 1px, 1px, 1px)}#skip-link a:active,#skip-link a:focus{position:static !important;clip:auto;height:auto;width:auto;overflow:auto}}#header,#main,#footer{margin-left:auto;margin-right:auto;max-width:1600px}#main:before,#main:after{content:"";display:table}#main:after{clear:both}#content aside{font-weight:bold;font-style:italic;font-size:1.2em;width:33.33333%;padding-left:10px;padding-right:10px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;word-wrap:break-word;padding-left:0;padding-right:13.33333px;margin-right:6.66667px;float:left;margin-top:0.83333em;margin-bottom:0.83333em}@media all and (min-width: 480px){#main{padding-top:4em}#main-menu{float:left;width:100%;margin-left:0%;margin-right:-100%;padding-left:10px;padding-right:10px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;word-wrap:break-word;margin-top:-4em;height:4em}}@media all and (min-width: 480px) and (max-width: 639px){#content{float:left;width:100%;margin-left:0%;margin-right:-100%;padding-left:10px;padding-right:10px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;word-wrap:break-word}#aside1{clear:left;float:left;width:50%;margin-left:0%;margin-right:-50%;padding-left:10px;padding-right:10px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;word-wrap:break-word}#aside2{float:left;width:50%;margin-left:50%;margin-right:-100%;padding-left:10px;padding-right:10px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;word-wrap:break-word}}@media all and (min-width: 640px) and (max-width: 799px){#content{float:left;width:66.66667%;margin-left:0%;margin-right:-66.66667%;padding-left:10px;padding-right:10px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;word-wrap:break-word}#aside1{float:right;width:33.33333%;margin-right:0%;margin-left:-33.33333%;padding-left:10px;padding-right:10px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;word-wrap:break-word}#aside2{clear:left;float:left;width:66.66667%;margin-left:0%;margin-right:-66.66667%;padding-left:10px;padding-right:10px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;word-wrap:break-word}}@media all and (min-width: 800px) and (max-width: 959px){#content{float:left;width:66.66667%;margin-left:0%;margin-right:-66.66667%;padding-left:10px;padding-right:10px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;word-wrap:break-word}#aside1{float:right;width:33.33333%;margin-right:0%;margin-left:-33.33333%;padding-left:10px;padding-right:10px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;word-wrap:break-word}#aside2{clear:right;float:right;width:33.33333%;margin-right:0%;margin-left:-33.33333%;padding-left:10px;padding-right:10px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;word-wrap:break-word}}@media all and (min-width: 960px){#content{float:left;width:60%;margin-left:20%;margin-right:-80%;padding-left:10px;padding-right:10px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;word-wrap:break-word}#aside1{float:left;width:20%;margin-left:0%;margin-right:-20%;padding-left:10px;padding-right:10px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;word-wrap:break-word}#aside2{float:left;width:20%;margin-left:80%;margin-right:-100%;padding-left:10px;padding-right:10px;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;word-wrap:break-word}}
+/* Skip link */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_common\.scss}line{font-family:\000037}}
+#skip-link {
+  margin: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_common\.scss}line{font-family:\0000311}}
+#skip-link a,
+#skip-link a:visited {
+  display: block;
+  width: 100%;
+  padding: 2px 0 3px 0;
+  text-align: center;
+  background-color: #666;
+  color: #fff;
+}
+
+/* Not good for accesablity, so try replacing this with other visual hooks. */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_common\.scss}line{font-family:\0000322}}
+a:focus {
+  outline: none;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_common\.scss}line{font-family:\0000326}}
+#logo-name {
+  display: inline-block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_common\.scss}line{font-family:\0000330}}
+#logo {
+  float: left;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px 0 0;
+  background: url("/images/design/logo-32.png") top center no-repeat transparent;
+}
+
+/* Consistent padding */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_common\.scss}line{font-family:\0000344}}
+#header,
+#content,
+#main-menu,
+#aside1,
+#aside2,
+#footer {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* Alternate border */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_common\.scss}line{font-family:\0000358}}
+#header,
+#main-menu,
+#content,
+#aside1,
+#aside2,
+#footer {
+  border: 1px solid #ccc;
+}
+
+/* Source-order meta info */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_common\.scss}line{font-family:\0000364}}
+header h1,
+header h2 {
+  display: inline;
+}
+
+/* Skip link */
+@media all and (min-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_layout\.scss}line{font-family:\0000315}}
+  #skip-link a {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_layout\.scss}line{font-family:\0000326}}
+  #skip-link a:active, #skip-link a:focus {
+    position: static !important;
+    clip: auto;
+    height: auto;
+    width: auto;
+    overflow: auto;
+  }
+}
+/* general layout */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_layout\.scss}line{font-family:\0000339}}
+#header,
+#main,
+#footer {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/zen-grids-1\.2\/stylesheets\/zen\/_grids\.scss}line{font-family:\0000352}}
+#main:before, #main:after {
+  content: "";
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Library\/Ruby\/Gems\/1\.8\/gems\/zen-grids-1\.2\/stylesheets\/zen\/_grids\.scss}line{font-family:\0000356}}
+#main:after {
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_layout\.scss}line{font-family:\0000351}}
+#content aside {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.2em;
+  width: 33.33333%;
+  padding-left: 10px;
+  padding-right: 10px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  word-wrap: break-word;
+  padding-left: 0;
+  padding-right: 13.33333px;
+  margin-right: 6.66667px;
+  float: left;
+  margin-top: 0.83333em;
+  margin-bottom: 0.83333em;
+}
+
+/* Horizontal navigation bar */
+@media all and (min-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_layout\.scss}line{font-family:\0000368}}
+  #main {
+    padding-top: 2.5em;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_layout\.scss}line{font-family:\0000371}}
+  #main-menu {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-top: -2.5em;
+    height: 2.5em;
+  }
+}
+/* 480px - 639px */
+@media all and (min-width: 480px) and (max-width: 639px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_layout\.scss}line{font-family:\0000382}}
+  #content {
+    float: left;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_layout\.scss}line{font-family:\0000385}}
+  #aside1 {
+    clear: left;
+    float: left;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: -50%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_layout\.scss}line{font-family:\0000389}}
+  #aside2 {
+    float: left;
+    width: 50%;
+    margin-left: 50%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}
+/* 640px - 799px */
+@media all and (min-width: 640px) and (max-width: 799px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_layout\.scss}line{font-family:\0000398}}
+  #content {
+    float: left;
+    width: 66.66667%;
+    margin-left: 0%;
+    margin-right: -66.66667%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_layout\.scss}line{font-family:\00003101}}
+  #aside1 {
+    float: right;
+    width: 33.33333%;
+    margin-right: 0%;
+    margin-left: -33.33333%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_layout\.scss}line{font-family:\00003104}}
+  #aside2 {
+    clear: left;
+    float: left;
+    width: 66.66667%;
+    margin-left: 0%;
+    margin-right: -66.66667%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}
+/* 800px - 959px */
+@media all and (min-width: 800px) and (max-width: 959px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_layout\.scss}line{font-family:\00003114}}
+  #content {
+    float: left;
+    width: 66.66667%;
+    margin-left: 0%;
+    margin-right: -66.66667%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_layout\.scss}line{font-family:\00003117}}
+  #aside1 {
+    float: right;
+    width: 33.33333%;
+    margin-right: 0%;
+    margin-left: -33.33333%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_layout\.scss}line{font-family:\00003120}}
+  #aside2 {
+    clear: right;
+    float: right;
+    width: 33.33333%;
+    margin-right: 0%;
+    margin-left: -33.33333%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}
+/* 960px & over */
+@media all and (min-width: 960px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_layout\.scss}line{font-family:\00003130}}
+  #content {
+    float: left;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: -80%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_layout\.scss}line{font-family:\00003133}}
+  #aside1 {
+    float: left;
+    width: 20%;
+    margin-left: 0%;
+    margin-right: -20%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_layout\.scss}line{font-family:\00003136}}
+  #aside2 {
+    float: left;
+    width: 20%;
+    margin-left: 80%;
+    margin-right: -100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    word-wrap: break-word;
+  }
+}
