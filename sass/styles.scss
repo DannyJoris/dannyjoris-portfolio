@@ -4,13 +4,19 @@
 /* common */
 body
 {
-  background-color:  #000;
+  margin: 0;
   color: #fff;  
+  
 }
 
 /* Header */
 
-#header {
+.header-wrapper {
+  background-color: #000;
+}
+
+#header,
+#footer {
   padding: 0 10px;
   &:after {
     clear: both;
@@ -67,6 +73,17 @@ body
 
 /* Footer */
 
+.footer-wrapper {
+  background-color: #000;
+}
+
+.sticky-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
 /* External links */
 
 #external {
@@ -93,3 +110,4 @@ body
     }
   }
 }
+
