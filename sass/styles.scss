@@ -1,2 +1,95 @@
 @import "common";
 @import "layout";
+
+/* common */
+body
+{
+  background-color:  #000;
+  color: #fff;  
+}
+
+/* Header */
+
+#header {
+  padding: 0 10px;
+  &:after {
+    clear: both;
+  }
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }  
+}
+
+/* Logo */
+
+#logo {
+  float: left;
+  width: 112px;
+  height: 70px;
+  margin: 0 10px 0 0;
+  background: url("/images/design/header-logo.jpg") 0 0 no-repeat transparent;
+  &:hover {
+    background-position: 0px -70px;
+  }
+}
+
+#logo-name
+{
+  float: left;
+}
+
+/* Main menu */
+
+#main-menu
+{
+  float: right;  
+  a {
+    display: inline-block;
+    background-color: #ff0000;
+    color: #fff;
+    padding: 16px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-style: italic;
+    border-radius: 5px;
+  }
+}
+
+/* Main */
+
+.main-wrapper
+{
+  background-color: #fafafa;
+  color: #333;
+}
+
+/* Footer */
+
+/* External links */
+
+#external {
+  float: right;
+  a {
+    display: inline-block;
+    width: 60px;
+    margin: 0 0 0 20px;
+
+    img {
+      width: 100%;
+    }
+    &.drupal-association {
+
+    }
+    &.drupal {
+
+    }
+    &.github {
+
+    }
+    &.twitter {
+
+    }
+  }
+}
