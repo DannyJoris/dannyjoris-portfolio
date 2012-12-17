@@ -5,8 +5,13 @@
 body
 {
   margin: 0;
-  color: #fff;  
-  
+  color: #333;  
+  background-color: #fafafa;
+}
+
+h1,
+h2 {
+  color: #333;  
 }
 
 /* Header */
@@ -15,8 +20,10 @@ body
   background-color: #000;
 }
 
+/* Header & footer */
 #header,
 #footer {
+  color: #fff;
   padding: 0 10px;
   &:after {
     clear: both;
@@ -52,23 +59,52 @@ body
 {
   float: right;  
   a {
-    display: inline-block;
-    background-color: #ff0000;
-    color: #fff;
+    float: left;
+    margin: 0 0 0 10px;
     padding: 16px 20px;
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #ff0000;
     text-decoration: none;
+    color: #fff;
     font-size: 18px;
     font-style: italic;
-    border-radius: 5px;
   }
 }
 
 /* Main */
 
-.main-wrapper
-{
-  background-color: #fafafa;
-  color: #333;
+#main {
+  color: #555;
+  
+  #content {
+    p {
+      line-height: 22px;
+    }
+  }
+}
+
+.demo {
+  padding: 10px 15px;
+  background-color: red;
+}
+
+.gist-code {
+  
+}
+
+.gist {
+  width: 100%;
+}
+
+ul#blog-overview {
+  a {
+    color: #555;
+    font-size: 1.1em;
+    &:hover {
+      color: #ff0000;    
+    }
+  }
 }
 
 /* Footer */
@@ -88,13 +124,17 @@ body
 
 #external {
   float: right;
+  height: 80px;
   a {
-    display: inline-block;
+    float: left;
     width: 60px;
+    height: 70px;
     margin: 0 0 0 20px;
-
+    position: relative;
     img {
       width: 100%;
+      position: absolute;
+      bottom: 0;
     }
     &.drupal-association {
 

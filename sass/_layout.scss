@@ -80,10 +80,10 @@ $zen-gutter-width: 20px;
 
 /* 800px - 959px */
 @media all and (min-width: 800px) {
-  $zen-column-count: 3;
+  $zen-column-count: 4;
 
   #content {
-    @include zen-grid-item(2, 2);
+    @include zen-grid-item(3, 2);
   }
   #aside1 {
     @include zen-grid-item(1, 1);

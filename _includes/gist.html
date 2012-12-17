@@ -1,0 +1,5 @@
+{% if page.gist %}
+  <h2>Code</h2>
+  <a href="/demo/{{ page.gist }}" title="Demo" class="demo">Demo</a>
+  <div id="gist-code" gist="{{ page.gist }}"></div>
+{% endif %}
