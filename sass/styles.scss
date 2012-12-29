@@ -1,3 +1,13 @@
+/* variables */
+
+$black: #000;
+$text-dark: #333;
+$text-main: #555;
+$text-light: #fff;
+$red: #ff0000;
+$background-color: #fafafa;
+
+@import "compass";
 @import "common";
 @import "layout";
 
@@ -5,25 +15,29 @@
 body
 {
   margin: 0;
-  color: #333;  
-  background-color: #fafafa;
+  color: $text-dark;
+  background-color: $background-color;
 }
 
 h1,
 h2 {
-  color: #333;  
+  color: $text-dark;  
 }
 
 /* Header */
 
 .header-wrapper {
-  background-color: #000;
+  /* background: url('../images/design/header-bg.jpg') top center repeat-x #000; */
+  background-color: $black;
+
+  -webkit-box-shadow: 0px 0px 10px 0px #000; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+          box-shadow: 0px 0px 10px 0px #000; /* Opera 10.5, IE9+, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
 /* Header & footer */
 #header,
 #footer {
-  color: #fff;
+  color: $text-light;
   padding: 0 10px;
   &:after {
     clear: both;
@@ -57,18 +71,41 @@ h2 {
 
 #main-menu
 {
-  float: right;  
+  float: right;
+  padding: 4px;
   a {
     float: left;
+    width: auto;
     margin: 0 0 0 10px;
     padding: 16px 20px;
     display: inline-block;
-    border-radius: 5px;
-    background-color: #ff0000;
+    // border-radius: 5px;
+    // background-color: #ff0000;
+    font-family: georgia, serif;
     text-decoration: none;
-    color: #fff;
+    color: $text-light;
     font-size: 18px;
     font-style: italic;
+
+    text-shadow: 1px 1px 2px #333;
+
+    // temp
+    // font-family: georgia;
+    font-style: italic;
+    letter-spacing: 1px;
+    // font-weight: bold;
+    margin: 0 0 0 4px;
+    padding: 22px 20px 22px 30px;
+    &:first-letter {
+      font-size: 28px;
+      font-style: normal;
+    }
+    &:hover, &:active {
+      background-color: #a80008;
+      @include filter-gradient(#a80008, #ff585e, horizontal);
+      @include background-image(linear-gradient(left bottom,  #a80008 0%,#ff585e 100%));      
+    }
+
   }
 }
 
@@ -76,7 +113,8 @@ h2 {
 
 #main {
   color: #555;
-  
+  margin-top: 1em;
+  margin-bottom: 1em;
   #content {
     p {
       line-height: 22px;
@@ -84,25 +122,12 @@ h2 {
   }
 }
 
-.demo {
-  padding: 10px 15px;
-  background-color: red;
-}
-
-.gist-code {
-  
-}
-
-.gist {
-  width: 100%;
-}
-
 ul#blog-overview {
   a {
-    color: #555;
+    color: $text-main;
     font-size: 1.1em;
     &:hover {
-      color: #ff0000;    
+      color: $red;    
     }
   }
 }
@@ -110,7 +135,7 @@ ul#blog-overview {
 /* Footer */
 
 .footer-wrapper {
-  background-color: #000;
+  background-color: $black;
 }
 
 .sticky-footer {
