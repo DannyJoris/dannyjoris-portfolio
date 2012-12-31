@@ -7,6 +7,11 @@ $text-light: #fff;
 $red: #ff0000;
 $background-color: #fafafa;
 
+$font: calibri, sans-serif;
+$font-serif: "Times New Roman", garamond, georgia, serif;
+
+// 115% capital letter
+
 @import "compass";
 @import "common";
 @import "layout";
@@ -16,12 +21,14 @@ body
 {
   margin: 0;
   color: $text-dark;
-  background-color: $background-color;
+  background: url('../images/design/bg-black.jpg') top center repeat $black;
+  font-family: $font-serif;
+  font-size: 100%;
 }
 
 h1,
 h2 {
-  color: $text-dark;  
+  color: $text-light;  
 }
 
 /* Header */
@@ -36,6 +43,7 @@ h2 {
 
 /* Header & footer */
 #header,
+#introduction,
 #footer {
   color: $text-light;
   padding: 0 10px;
@@ -55,7 +63,7 @@ h2 {
   float: left;
   width: 112px;
   height: 70px;
-  margin: 0 10px 0 0;
+  margin: 7px 0 0 0;
   background: url("/images/design/header-logo.jpg") 0 0 no-repeat transparent;
   &:hover {
     background-position: 0px -70px;
@@ -66,6 +74,102 @@ h2 {
 {
   float: left;
 }
+
+/* Introduction */
+
+.introduction-wrapper {
+  background: url('../images/design/bg-black-top.jpg') top center repeat-x transparent;
+  #introduction {
+    #front-logo-wrapper {
+      margin: 0 auto;
+      max-width: 40%;
+      min-width: 100px;
+      #front-logo img {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+    }
+    #front-drawing img {
+      display: block;
+      max-width: 100%;
+      margin: 0 auto;
+    }    
+    #introduction-summary {
+      @include zen-grid-container();
+      $zen-column-count: 2;
+      .item-1 {
+        @include zen-grid-item(1, 1);
+      }
+      .item-2 {
+        @include zen-grid-item(1, 2);
+      }
+      .item-3 {
+        @include zen-clear();
+        @include zen-grid-item(1, 1);
+      }
+      .item-4 {
+        @include zen-grid-item(1, 2);
+      }
+      .item {
+
+        .item-inner {
+          margin: 0 0 25px 30px;
+          h2 {
+            margin: 10px 0;
+            color: #eee;
+            font-size: 150%;
+            font-style: italic;
+            line-height: 120%;
+            &:first-letter {
+              font-size: 140%; // 30px
+            }
+          }
+          .p-indent {
+            float: left;
+            height: 87px;
+            width: 55px;
+            img {
+              float: left;
+              position: relative;
+              left: -35px;
+              width: 87px;
+              height: 87px;
+            }
+          }
+          p {
+            color: #b2b2b2;
+            font-size: 105%;
+            font-style: italic;
+            margin: 5px 0 0;            
+          }
+        }
+      }
+    }
+  }
+}
+
+/* from 799px */
+@media all and (min-width: 799px) {
+  .introduction-wrapper #introduction #introduction-summary {
+    @include zen-grid-container();
+    $zen-column-count: 4;
+    .item-1 {
+      @include zen-grid-item(1, 1);
+    }
+    .item-2 {
+      @include zen-grid-item(1, 2);
+    }
+    .item-3 {
+      @include zen-clear(none);
+      @include zen-grid-item(1, 3);
+    }
+    .item-4 {
+      @include zen-grid-item(1, 4);
+    }
+  }
+}
+
 
 /* Main menu */
 
@@ -81,29 +185,28 @@ h2 {
     display: inline-block;
     // border-radius: 5px;
     // background-color: #ff0000;
-    font-family: georgia, serif;
+    font-family: "Times new roman", georgia, serif;
     text-decoration: none;
     color: $text-light;
-    font-size: 18px;
+    font-size: 24px;
     font-style: italic;
 
-    text-shadow: 1px 1px 2px #333;
+    text-shadow: 2px 2px 2px #333;
 
     // temp
-    // font-family: georgia;
     font-style: italic;
     letter-spacing: 1px;
-    // font-weight: bold;
-    margin: 0 0 0 4px;
-    padding: 22px 20px 22px 30px;
+    margin: 0 0 0 0;
+    padding: 22px 25px 22px 30px;
+
     &:first-letter {
-      font-size: 28px;
+      font-size: 115%; // 28px
       font-style: normal;
     }
     &:hover, &:active {
       background-color: #a80008;
       @include filter-gradient(#a80008, #ff585e, horizontal);
-      @include background-image(linear-gradient(left bottom,  #a80008 0%,#ff585e 100%));      
+      @include background-image(linear-gradient(left bottom,  #a80008 0%,#ff585e 100%));
     }
 
   }
@@ -112,9 +215,10 @@ h2 {
 /* Main */
 
 #main {
-  color: #555;
+  color: $text-light;
   margin-top: 1em;
   margin-bottom: 1em;
+  font-size: 120%;
   #content {
     p {
       line-height: 22px;
