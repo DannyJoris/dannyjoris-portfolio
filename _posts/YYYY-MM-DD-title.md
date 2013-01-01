@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: blog
 title: sample
-description: lorem ipsum
-summary: lorem ipsum
 category: sample
 tags: abc def
+description: lorem ipsum
+summary: lorem ipsum
 ---
 Sample post

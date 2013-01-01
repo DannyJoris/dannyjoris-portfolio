@@ -1,5 +1,9 @@
 <!-- Header -->
-<header id="header">
-  <a href="/" id="logo" title="Home"></a>
-  {% include nav.html %}
-</header>
+<div class="wrapper header-wrapper">
+  <header id="header">
+    {% if page.url != '/index.html' %}
+      <a href="/" id="logo" title="Home"></a>
+    {% endif %}
+    {% include nav.html %}
+  </header>
+</div>

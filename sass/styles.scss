@@ -4,7 +4,7 @@ $black: #000;
 $text-dark: #333;
 $text-main: #555;
 $text-light: #fff;
-$red: #ff0000;
+$red: #dd0000;
 $background-color: #fafafa;
 $sans-serif: Helvetica, Arial, Calibri, sans-serif;
 $serif: "Times New Roman", garamond, georgia, serif;
@@ -46,11 +46,10 @@ a {
           transition: all 0.2s ease;  /* Firefox 16+, Opera 12.50+ */
 }
 
-
 h1,
 h2 {
   color: $text-dark;  
-  font-family: serif;
+  font-family: $serif;
 }
 
 dl {
@@ -67,12 +66,31 @@ dl {
     word-spacing: normal;
   }
   dt {
-    width: 25%;
+    width: 100%;
+    font-weight: bold;
+    padding: 1em 0 0;
   }
   dd {
-    width: 75%;
+    width: 100%;
+    border-top: 0;
   }
 }
+
+/* 0 - 480px */
+@media all and (min-width: 479px) {
+  dl {
+    dt {
+      width: 25%;
+      font-weight: normal;
+      padding: .5em 0;
+    }
+    dd {
+      width: 75%;
+      border-top: 1px solid #ccc;
+    }
+  }
+}
+
 
 /* Header */
 
@@ -137,19 +155,20 @@ dl {
 
     background-color: transparent;
     
-    -webkit-transition: all 0.9s ease;  /* Safari 3.2+, Chrome */
-       -moz-transition: all 0.9s ease;  /* Firefox 4-15 */
-         -o-transition: all 0.9s ease;  /* Opera 10.5–12.00 */
-            transition: all 0.9s ease;  /* Firefox 16+, Opera 12.50+ */
+    -webkit-transition: all 0.4s ease;  /* Safari 3.2+, Chrome */
+       -moz-transition: all 0.4s ease;  /* Firefox 4-15 */
+         -o-transition: all 0.4s ease;  /* Opera 10.5–12.00 */
+            transition: all 0.4s ease;  /* Firefox 16+, Opera 12.50+ */
     
     &:first-letter {
       font-size: 115%; // 28px
       font-style: normal;
     }
     &:hover, &:active {
-      background-color: #a80008;
+/*      background-color: #a80008;
       @include filter-gradient(#a80008, #ff585e, horizontal);
-      @include background-image(linear-gradient(left bottom,  #a80008 0%,#ff585e 100%));
+      @include background-image(linear-gradient(left bottom,  #a80008 0%,#ff585e 100%));*/
+      background-color: $red;
     }
   }
 }
@@ -294,6 +313,10 @@ dl {
   line-height: 125%;
   font-family: $sans-serif;
   color: $text-main;
+  h1,
+  h2 {
+    font-family: $sans-serif;
+  }
   #content {
     p {
       line-height: 22px;

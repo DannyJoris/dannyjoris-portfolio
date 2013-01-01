@@ -41,13 +41,9 @@
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <script type="text/javascript" src="/js/script.js"></script>
   </head>
-  <body>
-    <div class="wrapper header-wrapper">
-      {% include header.html %}
-    </div>
-      {{ content }}
-    <div class="wrapper footer-wrapper">
-      {% include footer.html %}
-    </div>
+  <body class="{% if page.url == '/index.html' %}front{% else %}not-front{% endif %}" >
+    {% include header.html %}
+    {{ content }}
+    {% include footer.html %}
   </body>
 </html>
