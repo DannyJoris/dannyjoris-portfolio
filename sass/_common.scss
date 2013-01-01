@@ -3,25 +3,6 @@
 $gutter-width: 10px;
 
 
-/* Skip link */
-#skip-link {
-  margin: 0;
-
-  a,
-  a:visited {
-    display: block;
-    width: 100%;
-    padding: 2px 0 3px 0;
-    text-align: center;
-    background-color: #666;
-    color: #fff;
-  }
-}
-
-/* Not good for accesablity, so try replacing this with other visual hooks. */
-a:focus {
-  outline: none;
-}
 
 #logo-name {
   display: inline-block;
