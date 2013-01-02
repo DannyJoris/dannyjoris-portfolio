@@ -302,7 +302,68 @@ dl {
 
 /* Front page */
 
+h3 {
+  border-bottom: 1px dotted #999;
+  padding: 0 0 5px 0;
+  span {
+    margin-top: 2px;
+    font-size: 85%;
+  }  
+}
 
+/* from 420px */
+@media all and (min-width: 420px) {
+  h3.title-discoverygarden {
+    span {
+      float: right;
+    }
+  }
+}
+
+/* from 240px */
+@media all and (min-width: 240px) {
+  h3.title-freelance {
+    span {
+      float: right;
+    }
+  }
+}
+
+ul#freelance-clients {
+  list-style: none;
+  list-style-image: none;
+  letter-spacing: -0.31em;
+  word-spacing: -0.43em;
+  padding: 0;
+  li {
+    display: inline-block;
+    margin: 5px;
+    border: 1px solid #ddd;
+    vertical-align: middle;
+    letter-spacing: normal;
+    word-spacing: normal;
+    list-style: none;
+    list-style-image: none;
+    img {
+      display: block;
+      max-width: 100%;
+    }    
+  }
+}
+
+ul#freelance-selected-work {
+  list-style: none;
+  list-style-image: none;
+  padding: 0;
+  li {
+    padding: 10px;
+    margin: 5px;
+    background-color: #efefef;
+    list-style: none;
+    list-style-image: none;
+    border-radius: 5px;
+  }
+}
 
 /* Main */
 
@@ -377,15 +438,6 @@ ul#blog-overview {
     }
     &:hover {
       opacity: 1; /* Chrome 4+, Firefox 2+, Safari 3.1+, Opera 9+, IE9+, iOS 3.2+, Android 2.1+ */
-    }
-    .drupal {
-
-    }
-    .github {
-
-    }
-    .twitter {
-
     }
   }
 }

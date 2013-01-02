@@ -621,8 +621,74 @@ dl dd {
   }
 }
 /* Front page */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003305}}
+h3 {
+  border-bottom: 1px dotted #999;
+  padding: 0 0 5px 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003308}}
+h3 span {
+  margin-top: 2px;
+  font-size: 85%;
+}
+
+/* from 420px */
+@media all and (min-width: 420px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003317}}
+  h3.title-discoverygarden span {
+    float: right;
+  }
+}
+/* from 240px */
+@media all and (min-width: 240px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003326}}
+  h3.title-freelance span {
+    float: right;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003332}}
+ul#freelance-clients {
+  list-style: none;
+  list-style-image: none;
+  letter-spacing: -0.31em;
+  word-spacing: -0.43em;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003338}}
+ul#freelance-clients li {
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+  letter-spacing: normal;
+  word-spacing: normal;
+  list-style: none;
+  list-style-image: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003347}}
+ul#freelance-clients li img {
+  display: block;
+  max-width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003354}}
+ul#freelance-selected-work {
+  list-style: none;
+  list-style-image: none;
+  padding: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003358}}
+ul#freelance-selected-work li {
+  padding: 10px;
+  margin: 5px;
+  background-color: #efefef;
+  list-style: none;
+  list-style-image: none;
+  border-radius: 5px;
+}
+
 /* Main */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003309}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003370}}
 #main {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -631,46 +697,46 @@ dl dd {
   font-family: Helvetica, Arial, Calibri, sans-serif;
   color: #555555;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003378}}
 #main h1,
 #main h2 {
   font-family: Helvetica, Arial, Calibri, sans-serif;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003382}}
 #main #content p {
   line-height: 22px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003389}}
 ul#blog-overview a {
   color: #555555;
   font-size: 1.1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003331}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003392}}
 ul#blog-overview a:hover {
   color: #dd0000;
 }
 
 /* Footer */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003339}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003400}}
 .footer-wrapper {
   /*background: url('../images/design/bg-black.jpg') top center repeat $black;*/
   /*background: url('../images/design/bg-black-top.jpg') top center repeat-x transparent;*/
   /*background-color: #333;*/
   border-top: 2px solid #ddd;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003340}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003401}}
 .footer-wrapper .footer-wrapper-inner {
   border-top: 2px solid #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003347}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003408}}
 .footer-wrapper #footer {
   padding-top: 10px;
   padding-bottom: 10px;
   color: #555555;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003354}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003415}}
 .sticky-footer {
   position: absolute;
   bottom: 0;
@@ -679,12 +745,12 @@ ul#blog-overview a:hover {
 }
 
 /* External links */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003363}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003424}}
 #external {
   float: right;
   height: 80px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003366}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003427}}
 #external a {
   position: relative;
   float: left;
@@ -694,13 +760,13 @@ ul#blog-overview a:hover {
   opacity: 0.8;
   /* Chrome 4+, Firefox 2+, Safari 3.1+, Opera 9+, IE9+, iOS 3.2+, Android 2.1+ */
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003373}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003434}}
 #external a img {
   width: 100%;
   position: absolute;
   bottom: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003378}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003439}}
 #external a:hover {
   opacity: 1;
   /* Chrome 4+, Firefox 2+, Safari 3.1+, Opera 9+, IE9+, iOS 3.2+, Android 2.1+ */
