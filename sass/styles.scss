@@ -1,6 +1,7 @@
 /* variables */
 
 $black: #000;
+$white: #fff;
 $text-dark: #333;
 $text-main: #555;
 $text-light: #fff;
@@ -356,12 +357,50 @@ ul#freelance-selected-work {
   list-style-image: none;
   padding: 0;
   li {
-    padding: 10px;
-    margin: 5px;
-    background-color: #efefef;
+    position: relative;
+    padding: 15px;
+    margin: 10px 5px;
+    background-color: $white;
     list-style: none;
     list-style-image: none;
+    border: 1px solid #ddd;
     border-radius: 5px;
+    &:hover {
+      cursor: pointer;
+    }
+    .marker {
+/*      position: absolute;
+      height: 0;
+      right: 0;
+      top: 0;
+      width: 0;
+      border-left: 25px solid transparent;
+      border-top: 25px solid #eee;
+      border-radius: 0 0 0 0;*/
+
+      background-color: #eee;
+      border-radius: 10px 10px 10px 10px;
+      float: right;
+      height: 20px;
+      width: 20px;      
+      
+      -webkit-transition: all 0.4s ease;  /* Safari 3.2+, Chrome */
+         -moz-transition: all 0.4s ease;  /* Firefox 4-15 */
+           -o-transition: all 0.4s ease;  /* Opera 10.5–12.00 */
+              transition: all 0.4s ease;  /* Firefox 16+, Opera 12.50+ */
+    }
+  }
+  li.katiemcgarry:hover .marker {
+    background-color: #edc667;
+    /*border-top: 25px solid #edc667;*/
+  }
+  li.merchantmanpub:hover .marker {
+    background-color: #053714;
+    /*border-top: 25px solid #053714;*/
+  }
+  li.miekewillems:hover .marker {
+    background-color: #111a9d;
+    /*border-top: 25px solid #111a9d;*/
   }
 }
 
