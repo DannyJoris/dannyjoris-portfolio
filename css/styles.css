@@ -739,13 +739,13 @@ ul#freelance-selected-work li.miekewillems:hover .marker {
   margin-bottom: 1em;
   font-size: 105%;
   line-height: 125%;
-  font-family: Helvetica, Arial, Calibri, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, Calibri, sans-serif;
   color: #555555;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003417}}
 #main h1,
 #main h2 {
-  font-family: Helvetica, Arial, Calibri, sans-serif;
+  font-family: "Open Sans", Helvetica, Arial, Calibri, sans-serif;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003421}}
 #main #content p {
