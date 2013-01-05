@@ -5,6 +5,14 @@
     $(window).resize(function() {
       pushFooter();
     });
+    
+    // little active class hack
+    // blog posts have 'layout: blog', but this gets overwritten because the blog
+    // layout has 'layout: html' and the navagation where I check for yaml variables
+    // gets included in the html layout. Suggestions, anyone? :)
+    if ($('#content').hasClass('blog-post')) {
+      $('a.blog-link').addClass('active');
+    }
   });
   
   // push footer to the bottom of the page if total content height is smaller
