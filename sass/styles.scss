@@ -120,6 +120,14 @@ dl {
   }  
 }
 
+.header-intro {
+  display: inline-block;
+  margin-top: 30px;
+  font-family: $serif;
+  font-size: 140%;
+  font-style: italic;
+}
+
 /* Logo */
 
 #logo {
@@ -329,6 +337,25 @@ h3 {
     }
   }
 }
+
+#main #content p.intro {
+  margin-bottom: 60px;
+  /*padding: 30px 0;*/
+  font-size: 110%;
+  line-height: 170%;
+  font-style: italic;
+  text-indent: 30px;
+/*  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;*/
+
+  &:first-letter {
+    font-size: 175%;
+  }
+  .highlight {
+    font-weight: bold;
+  }  
+}
+
 
 ul#freelance-clients {
   list-style: none;

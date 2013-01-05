@@ -3,6 +3,8 @@
   <header id="header">
     {% if page.url != '/index.html' %}
       <a href="/" id="logo" title="Home"></a>
+    {% else %}
+      <span class="header-intro">Danny Joris: Drupal themer and developer</span>
     {% endif %}
     {% include nav.html %}
   </header>
