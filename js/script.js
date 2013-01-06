@@ -8,11 +8,14 @@
     
     // little active class hack
     // blog posts have 'layout: blog', but this gets overwritten because the blog
-    // layout has 'layout: html' and the navagation where I check for yaml variables
+    // layout has 'layout: html' and the navigation where I check for yaml variables
     // gets included in the html layout. Suggestions, anyone? :)
     if ($('#content').hasClass('blog-post')) {
       $('a.blog-link').addClass('active');
     }
+    
+    // Selected work accordeon and slideshow
+    $('.flexslider').flexslider(); // { animation: "slide"  }
   });
   
   // push footer to the bottom of the page if total content height is smaller

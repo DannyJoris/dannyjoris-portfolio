@@ -1,3 +1,74 @@
 auto: true
 permalink: pretty
 destination: ./__site
+
+#  Work
+#  Images need to be placed in /images/work/
+#  array structure: http://stackoverflow.com/a/8869290
+#
+#  machinename:
+#    title: Human name
+#    color: #ff0000
+#    url-title: example.com
+#    url: http://example.com
+#    meta:
+#      - Drupal
+#      - Layout&nbsp;design
+#      - Site&nbsp;building
+#      - Theming
+#      - Custom&nbsp;development
+#    images:
+#      - image1.png
+#      - image2.png
+#      - image3.png
+work:
+  - name: katiemcgarry
+    title: Katie McGarry
+    color: "#edc667"
+    url-title: katiemcgarrymusic.com
+    url: http://katiemcgarrymusic.com
+    meta:
+      - Drupal
+      - Layout&nbsp;design
+      - Site&nbsp;building
+      - Theming
+      - Custom&nbsp;development
+    images:
+      - kmg-logo.png
+      - kmg-front.png
+      - kmg-music.png
+      - kmg-bio.png
+  - name: merchantmanpub
+    title: The Merchantman Pub
+    color: "#053714"
+    url-title: merchantmanpub.com
+    url: http://merchantmanpub.com
+    meta:
+      - Drupal
+      - Layout&nbsp;design
+      - Site&nbsp;building
+      - Theming
+    images:
+      - mmp-logo.png
+      - mmp-front.png
+      - mmp-footer.png
+      - mmp-newsletter-front.png
+      - mmp-newsletter.png
+      - mmp-menu.png
+      - mmp-pictures.png
+  - name: miekewillems
+    title: Mieke Willems
+    color: "#111a9d"
+    meta:
+      - Drupal
+      - Layout&nbsp;design
+      - Site&nbsp;building
+      - Theming
+      - Ecommerce
+      - Static&nbsp;to&nbsp;dynamic
+    images:
+      - mw-logo.png
+      - mw-front.png
+      - mw-categories.png
+      - mw-shop.png
+      - mw-product.png

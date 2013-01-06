@@ -135,9 +135,9 @@ dl {
   width: 112px;
   height: 68px;
   margin: 0 0 0 0;
-  background: url("/images/design/header-logo.jpg") 0 0 no-repeat transparent;
+  background: url("/images/design/header-logo.jpg") 0 -1px no-repeat transparent;
   &:hover {
-    background-position: 0px -70px;
+    background-position: 0px -71px;
   }
 }
 
@@ -146,13 +146,13 @@ dl {
 #main-menu
 {
   float: right;
-  padding: 4px;
+  padding: 0;
   a {
     float: left;
     display: inline-block;
     width: auto;
     margin: 0 0 0 0;
-    padding: 16px 25px 18px;
+    padding: 19px 25px 20px;
 
     font-family: $serif;
     font-size: 140%;
@@ -177,7 +177,7 @@ dl {
 /*      background-color: #a80008;
       @include filter-gradient(#a80008, #ff585e, horizontal);
       @include background-image(linear-gradient(left bottom,  #a80008 0%,#ff585e 100%));*/
-      background-color: $red;
+      background-color: #cc0000;
     }
   }
 }
@@ -386,26 +386,20 @@ ul#freelance-selected-work {
   padding: 0;
   li {
     position: relative;
-    padding: 15px;
+    padding: 0;
     margin: 10px 5px;
     background-color: $white;
     list-style: none;
     list-style-image: none;
     border: 1px solid #ddd;
     border-radius: 5px;
-    &:hover {
-      cursor: pointer;
+    .title {
+      padding: 15px;
+      &:hover {
+        cursor: pointer;
+      }
     }
     .marker {
-/*      position: absolute;
-      height: 0;
-      right: 0;
-      top: 0;
-      width: 0;
-      border-left: 25px solid transparent;
-      border-top: 25px solid #eee;
-      border-radius: 0 0 0 0;*/
-
       background-color: #eee;
       border-radius: 10px 10px 10px 10px;
       float: right;
@@ -417,17 +411,62 @@ ul#freelance-selected-work {
            -o-transition: all 0.4s ease;  /* Opera 10.5–12.00 */
               transition: all 0.4s ease;  /* Firefox 16+, Opera 12.50+ */
     }
+    .content {
+      padding: 0 15px 20px;
+    }
+    .viewer {
+      /*position: relative;*/
+      /*width: 100%;*/
+      /*height: 400px;*/
+      margin: 0;
+      background-color: #efefef;
+      .flexslider {
+/*        position: absolute;
+        top: 5px;
+        right: 5px;
+        bottom: 5px;
+        left: 5px;*/
+        li {
+          position: relative;
+          padding: 0;
+          margin: 0;
+          background-color: transparent;
+          list-style: none;
+          list-style-image: none;
+          border: none;
+          border-radius: 0;
+          img {
+            /*width: 100%;*/  
+          }
+        }
+      }
+    }
+    ul.meta {
+      padding: 0;
+      margin: 10px 0;
+      li {
+        display: inline-block;
+        margin: 0 10px 0 0;
+        padding: 5px 0 5px 20px;
+        border: none;
+        border-radius: 0;
+        background: url('../images/design/list-check.png') 0 8px no-repeat transparent;
+      }
+    }
+    .visit {
+      padding: 5px 0;
+    }
   }
   li.katiemcgarry:hover .marker {
-    background-color: #edc667;
+    /*background-color: #edc667;*/
     /*border-top: 25px solid #edc667;*/
   }
   li.merchantmanpub:hover .marker {
-    background-color: #053714;
+    /*background-color: #053714;*/
     /*border-top: 25px solid #053714;*/
   }
   li.miekewillems:hover .marker {
-    background-color: #111a9d;
+    /*background-color: #111a9d;*/
     /*border-top: 25px solid #111a9d;*/
   }
 }
