@@ -421,11 +421,7 @@ ul#freelance-selected-work {
       margin: 0;
       background-color: #efefef;
       .flexslider {
-/*        position: absolute;
-        top: 5px;
-        right: 5px;
-        bottom: 5px;
-        left: 5px;*/
+        border-width: 15px 15px 35px 15px;
         li {
           position: relative;
           padding: 0;
@@ -436,7 +432,15 @@ ul#freelance-selected-work {
           border: none;
           border-radius: 0;
           img {
-            /*width: 100%;*/  
+
+          }
+        }
+        ol.flex-control-nav {
+          bottom: -34px;
+          a {
+            padding: 1px;
+            margin: 0 3px;
+            cursor: pointer;
           }
         }
       }

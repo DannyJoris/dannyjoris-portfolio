@@ -15,7 +15,7 @@
     }
     
     // Selected work accordeon and slideshow
-    $('.flexslider').flexslider(); // { animation: "slide"  }
+    $('.flexslider').flexslider({ animation: "slide"  });
   });
   
   // push footer to the bottom of the page if total content height is smaller
