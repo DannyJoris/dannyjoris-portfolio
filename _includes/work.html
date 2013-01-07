@@ -1,16 +1,16 @@
 {% if site.work != NULL %}
   <ul id="freelance-selected-work">
     {% for item in site.work %}
-      <li class="{{ item.name }}">
+      <li class="work {{ item.name }}">
         <div class="title">{{ item.title }}<div class="marker" color="{{ item.color }}"></div></div>
-        <div class="content">
+        <div class="content closed">
           {% if item.images %}
             <div class="viewer">
               <div class="flexslider">
                 <ul class="slides">
                   {% for image in item.images %}
                     <li>
-                      <img alt="{{ image }}" src="images/work/{{ image }}" class="hidden">
+                      <img alt="{{ image }}" path="images/work/{{ image }}" class="hidden">
                     </li>
                   {% endfor %}
                 </ul>

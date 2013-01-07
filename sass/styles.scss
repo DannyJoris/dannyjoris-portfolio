@@ -412,6 +412,8 @@ ul#freelance-selected-work {
               transition: all 0.4s ease;  /* Firefox 16+, Opera 12.50+ */
     }
     .content {
+      // hide by default
+      display: none;
       padding: 0 15px 20px;
     }
     .viewer {
@@ -422,8 +424,9 @@ ul#freelance-selected-work {
       background-color: #efefef;
       .flexslider {
         border-width: 15px 15px 35px 15px;
+        margin: 0 0 20px;
         li {
-          position: relative;
+          position: static;
           padding: 0;
           margin: 0;
           background-color: transparent;
@@ -436,7 +439,7 @@ ul#freelance-selected-work {
           }
         }
         ol.flex-control-nav {
-          bottom: -34px;
+          bottom: -33px;
           a {
             padding: 1px;
             margin: 0 3px;
