@@ -15,40 +15,25 @@
     }
 
     // Selected work
+    $('.flexslider').each(function() {
+      $(this).flexslider({ animation: "slide" });
+    });
     var selectedWork = $('#freelance-selected-work');
+    flexsliderSlideUp(selectedWork);
     selectedWork.find('.title').each(function() {
-      $(this).click(function() {
+      $(this).click(function(e) {
         var content = $(this).next('.content');
         if (content.hasClass('closed')) {
-        console.log('close all opened')
         flexsliderSlideUp(selectedWork);
           content.removeClass('closed').addClass('opened');
-          content.slideDown(500);
+          content.hide();
+          content.slideDown(400);
           flexsliderScroll(content);
         }
         else {
           flexsliderSlideUp(selectedWork);
-          return;
+          e.preventDefault();
         }
-
-        var flexslider = content.find('.flexslider');
-        // clicked for the first time
-        if (!content.hasClass('flexslider-processed')) {
-          var images = content.find('img');          
-          images.each(function() {
-            // move from path to src attribute. sort of a lazy load.
-            var url = $(this).attr('path');
-            $(this).attr('src', url);
-          });
-          // initialize flexslider
-          // move: 1 doesn't seem to be working?
-          content.find('.flexslider').flexslider({ animation: "slide" });
-
-          content.addClass('flexslider-processed');
-        }
-        else {
-
-        }        
       });
     });
   });
@@ -81,8 +66,10 @@
   function flexsliderSlideUp(selectedWork) {
     // slide up
     selectedWork.find('.opened').each(function() {
-      $(this).slideUp(500);
-      $(this).removeClass('opened').addClass('closed');
+      $(this).slideUp(400, function() {
+        $(this).removeClass('opened').addClass('closed');
+        $(this).show();
+      });
     });
     // pause and reset
     selectedWork.find('.opened .flexslider').each(function() {
@@ -98,7 +85,7 @@
 
     $('html, body').animate({
       scrollTop: selectedWorkOffset + (itemHeight * itemIndex) - 10
-    }, 500);
+    }, 400);
   }
   
 }(jQuery));

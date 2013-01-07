@@ -413,8 +413,14 @@ ul#freelance-selected-work {
     }
     .content {
       // hide by default
-      display: none;
+      /*display: none;*/
       padding: 0 15px 20px;
+      &.closed {
+        position: relative;
+        left: -100000px;
+        padding: 0;
+        height: 1px;
+      }
     }
     .viewer {
       /*position: relative;*/
