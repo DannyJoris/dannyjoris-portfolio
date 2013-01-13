@@ -15,26 +15,51 @@
     }
 
     // Selected work
+    var selectedWork = $('#freelance-selected-work');
+    // Initialize all sliders
     $('.flexslider').each(function() {
       $(this).flexslider({ animation: "slide" });
+      $(this).flexslider('pause');
     });
-    var selectedWork = $('#freelance-selected-work');
+    // slide all viewers up
     flexsliderSlideUp(selectedWork);
-    selectedWork.find('.title').each(function() {
-      $(this).click(function(e) {
-        var content = $(this).next('.content');
-        if (content.hasClass('closed')) {
-        flexsliderSlideUp(selectedWork);
-          content.removeClass('closed').addClass('opened');
-          content.hide();
-          content.slideDown(400);
-          flexsliderScroll(content);
-        }
-        else {
-          flexsliderSlideUp(selectedWork);
-          e.preventDefault();
+    // bind click to all titles
+    selectedWork.find('li.work').each(function() {
+      var $this = $(this);
+      var title = $this.find('.title');
+      var content = $this.find('.content');
+      var flexSlider = $this.find('.flexslider');
+      var marker = $this.find('.marker');
+      var color = marker.attr('color');
+      var originalColor = marker.css('background-color');
+
+      // title hover: marker
+      title.hover(function() {
+        marker.css({'background-color': color});
+      }, function() {
+        if ($this.hasClass('closed')) {
+          marker.css({'background-color': originalColor});
         }
       });
+
+      // title click: content
+      title.click(function(e) {
+        // slide all viewers up
+        flexsliderSlideUp(selectedWork);
+        if ($this.hasClass('closed')) {
+          $this.removeClass('closed').addClass('opened');
+          marker.css({'background-color': color});
+          content.css({'display': 'none'});
+          content.slideDown(450);
+          // opacity + start
+          flexSlider.css({'opacity':'0.1'});
+          flexSlider.animate({'opacity':'1'});
+          flexSlider.flexslider('play');
+          // scroll
+          flexsliderScroll(content);
+        }
+        e.preventDefault();
+      });      
     });
   });
   
@@ -54,38 +79,39 @@
       $(".footer-wrapper").removeClass("sticky-footer");
     }
   }
-  
-  function flexsliderSlideDown(selectedWork) {
-
-    selectedWork.find('.opened').each(function() {
-      flexsliderSlideUp(selectedWork);
-    });
-  }
-  
-  // slide all instances up
+ 
+  // slide all viewers up
   function flexsliderSlideUp(selectedWork) {
     // slide up
     selectedWork.find('.opened').each(function() {
-      $(this).slideUp(400, function() {
-        $(this).removeClass('opened').addClass('closed');
-        $(this).show();
+      var $this = $(this);
+      // slideup
+      $this.find('.content').slideUp(450, function() {
+        $this.removeClass('opened').addClass('closed');
+        $this.find('.marker').css({'background-color': '#eee'});
+        $(this).css({'display': 'block'});
       });
     });
-    // pause and reset
+    // reset
     selectedWork.find('.opened .flexslider').each(function() {
-//      $(this).flexslider('pause');
-//      $(this).flexslider(0);
+      $(this).animate({'opacity':'0.1'}, 750, 'swing', function() {
+        $(this).flexslider(0);
+      });
+    });
+    // pause
+    selectedWork.find('.flexslider').each(function() {
+      $(this).flexslider('pause');
     });
   }
-  
+
+  // scroll to top of the page
   function flexsliderScroll(content) {
     var selectedWorkOffset = $('#freelance-selected-work').offset().top;
     var itemIndex = $('li.work').index(content.parent('.work'));
     var itemHeight = 65; // @TODO: calculate this
-
     $('html, body').animate({
       scrollTop: selectedWorkOffset + (itemHeight * itemIndex) - 10
-    }, 400);
+    }, 450);
   }
   
 }(jQuery));

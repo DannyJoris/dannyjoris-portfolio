@@ -8,6 +8,7 @@ destination: ./__site
 #
 #  machinename:
 #    title: Human name
+#    description: "This is an optional description."
 #    color: #ff0000
 #    url-title: example.com
 #    url: http://example.com

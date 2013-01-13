@@ -415,19 +415,20 @@ ul#freelance-selected-work {
       // hide by default
       /*display: none;*/
       padding: 0 15px 20px;
-      &.closed {
-        position: relative;
-        left: -100000px;
-        padding: 0;
-        height: 1px;
-      }
+    }
+    &.closed .content {
+      // http://docs.jquery.com/UI/API/1.8/Tabs#...my_slider.2C_Google_Map.2C_sIFR_etc._not_work_when_placed_in_a_hidden_.28inactive.29_tab.3F
+      position: relative;
+      left: -100000px;
+      padding: 0;
+      height: 1px;
     }
     .viewer {
       /*position: relative;*/
       /*width: 100%;*/
       /*height: 400px;*/
       margin: 0;
-      background-color: #efefef;
+      background-color: #fff;
       .flexslider {
         border-width: 15px 15px 35px 15px;
         margin: 0 0 20px;

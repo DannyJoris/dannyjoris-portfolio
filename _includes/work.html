@@ -1,9 +1,9 @@
 {% if site.work != NULL %}
   <ul id="freelance-selected-work">
     {% for item in site.work %}
-      <li class="work {{ item.name }}">
+      <li class="closed work {{ item.name }}">
         <div class="title">{{ item.title }}<div class="marker" color="{{ item.color }}"></div></div>
-        <div class="content closed">
+        <div class="content">
           {% if item.images %}
             <div class="viewer">
               <div class="flexslider">
@@ -24,6 +24,9 @@
               {% endfor %}
             </ul>
           {% endif %}
+          {% if item.description %}
+            <p class="description">{{ item.description }}</p>
+          {% endif %}          
           {% if item.url and item.url-title %}
             <div class="visit">Visit: <a href="{{ item.url }}" title="{{ item.title }}" rel="nofollow" target="_blank">{{ item.url-title }}</a></div>
           {% endif %}
