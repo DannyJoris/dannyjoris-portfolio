@@ -53,6 +53,10 @@ h2 {
   font-family: $serif;
 }
 
+h1 {
+  font-weight: normal;
+}
+
 dl {
   margin: 0 auto;
   letter-spacing: -0.31em;
@@ -488,8 +492,8 @@ ul#freelance-selected-work {
 /* Main */
 
 #main {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   font-size: 105%;
   line-height: 125%;
   font-family: $sans-serif;
@@ -512,6 +516,20 @@ ul#blog-overview {
     &:hover {
       color: $red;    
     }
+  }
+}
+
+.blog-post,
+.blog-overview {
+
+  header {
+    border-bottom: 1px dotted #ccc;
+    margin: 0 0 1em;
+    padding: 0.5em 0;
+  }
+  .date {
+    float: right;
+    margin-top: 7px 0 0 0;
   }
 }
 

@@ -5,14 +5,6 @@
     $(window).resize(function() {
       pushFooter();
     });
-    
-    // little active class hack
-    // blog posts have 'layout: blog', but this gets overwritten because the blog
-    // layout has 'layout: html' and the navigation where I check for yaml variables
-    // gets included in the html layout. Suggestions, anyone? :)
-    if ($('#content').hasClass('blog-post')) {
-      $('a.blog-link').addClass('active');
-    }
 
     // Selected work
     var selectedWork = $('#freelance-selected-work');
@@ -67,10 +59,10 @@
   // than window height.
   function pushFooter() {
     var windowHeight = $(window).innerHeight();
-    var headerHeight = $("#header").height();
-    var introductionHeight = $("#introduction").height();
-    var mainHeight = $("#main").height();
-    var footerHeight = $("#footer").height();
+    var headerHeight = $("#header").outerHeight(true);
+    var introductionHeight = $("#introduction").outerHeight(true);
+    var mainHeight = $("#main").outerHeight(true);
+    var footerHeight = $("#footer").outerHeight(true);
 
     if (headerHeight + introductionHeight + mainHeight + footerHeight < windowHeight) {
       $(".footer-wrapper").addClass("sticky-footer");

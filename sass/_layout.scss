@@ -89,6 +89,11 @@ $zen-gutter-width: 20px;
   #aside1 {
     @include zen-grid-item(1, 1);
   }
+  
+/*  #content.blog-overview {
+    @include zen-grid-item(4, 1);
+  }*/
+  
 }
 
 /* 960px & over */
