@@ -46,7 +46,7 @@
     <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
     <script type="text/javascript" src="/js/script.js"></script>
   </head>
-  <body class="{% if page.url == '/index.html' %}front{% else %}not-front{% endif %}" >
+  <body class="no-js {% if page.url == '/index.html' %}front{% else %}not-front{% endif %}" >
     {% include header.html %}
     {{ content }}
     {% include footer.html %}

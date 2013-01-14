@@ -1,10 +1,23 @@
 (function($) {
   $(document).ready(function() {
+    // js
+    $('body').removeClass('no-js').addClass('js');
+    
     // push footer init
     pushFooter();
     $(window).resize(function() {
       pushFooter();
     });
+
+    // Front graphics
+    $('#front-graphics img').each(function() {
+      $(this).load(function() {
+        $(this).animate({'opacity': '1'}, 750);
+        // .fadeIn(750)
+      })
+    });
+    
+    
 
     // Selected work
     var selectedWork = $('#freelance-selected-work');
