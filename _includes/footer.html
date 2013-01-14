@@ -2,15 +2,15 @@
 <div class="wrapper footer-wrapper">
   <div class="footer-wrapper-inner">
     <footer id="footer">
+      {% include external.html %}
       <div class="footer-links">
         {% if page.url == '/index.html' %}
           <a href="/blog" class="blog" title="Blog">Blog</a>
         {% else %}
           <a href="/#main" class="resume" title="Resume">Resume</a>
         {% endif %}
+        <small>© {{ 'now' | date: '%Y' }} - Danny Joris</small>
       </div>
-      {% include external.html %}
-      <small>© {{ 'now' | date: '%Y' }} - Danny Joris</small>
     </footer>
   </div>
 </div>

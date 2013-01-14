@@ -81,7 +81,7 @@ dl {
   }
 }
 
-/* 0 - 480px */
+/* From 479px */
 @media all and (min-width: 479px) {
   dl {
     dt {
@@ -126,9 +126,11 @@ dl {
 
 .header-intro {
   display: inline-block;
-  margin-top: 23px;
+  text-align: center;
+  width: 100%;
+  margin-top: 15px;
   font-family: $serif;
-  font-size: 140%;
+  font-size: 110%;
   font-style: italic;
 }
 
@@ -183,6 +185,33 @@ dl {
       @include background-image(linear-gradient(left bottom,  #a80008 0%,#ff585e 100%));*/
       background-color: #cc0000;
     }
+  }
+}
+
+.front #main-menu {
+  float: none;
+  width: 100px;
+  margin: 0 auto;
+}
+
+/* from 450px */
+@media all and (min-width: 450px) {
+  .front .header-intro {
+    width: auto;
+    text-align: left;
+    margin-top: 23px;
+  }
+  .front #main-menu {
+    float: right;
+    margin: 0;
+    width: auto;
+  }
+}
+
+/* from 525px */
+@media all and (min-width: 550px) {
+  .header-intro {
+    font-size: 140%;
   }
 }
 
@@ -479,18 +508,6 @@ ul#freelance-selected-work {
       padding: 5px 0;
     }
   }
-  li.katiemcgarry:hover .marker {
-    /*background-color: #edc667;*/
-    /*border-top: 25px solid #edc667;*/
-  }
-  li.merchantmanpub:hover .marker {
-    /*background-color: #053714;*/
-    /*border-top: 25px solid #053714;*/
-  }
-  li.miekewillems:hover .marker {
-    /*background-color: #111a9d;*/
-    /*border-top: 25px solid #111a9d;*/
-  }
 }
 
 /* Main */
@@ -543,9 +560,6 @@ ul#blog-overview {
   .footer-wrapper-inner {
     border-top: 2px solid #fff;
   }
-  /*background: url('../images/design/bg-black.jpg') top center repeat $black;*/
-  /*background: url('../images/design/bg-black-top.jpg') top center repeat-x transparent;*/
-  /*background-color: #333;*/
   border-top: 2px solid #ddd;
   #footer {
     padding-top: 10px;
@@ -555,7 +569,8 @@ ul#blog-overview {
     font-size: 105%;
     line-height: 125%;
     .footer-links {
-      display: inline-block;
+      text-align: center;
+      margin: 0 0 5px 0;
       a {
         margin: 0 5px 0 0;
       }
@@ -573,7 +588,8 @@ ul#blog-overview {
 /* External links */
 
 #external {
-  float: right;
+  margin: 0 auto 10px;
+  width: 250px;
   height: 80px;
   a {
     position: relative;
@@ -593,3 +609,20 @@ ul#blog-overview {
   }
 }
 
+/* From 480px */
+@media all and (min-width: 480px) {
+  .footer-wrapper {
+    #footer {
+      .footer-links {
+        display: inline-block;
+        text-align: left;
+        margin: 0;
+      }
+    }
+  }
+  
+  #external {
+    float: right;
+    margin: 0;
+  }
+}
