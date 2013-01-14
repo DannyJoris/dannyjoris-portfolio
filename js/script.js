@@ -11,7 +11,7 @@
 
     // Front graphics
     $('#front-graphics img').each(function() {
-      $(this).load(function() {
+      $(this).imagesLoaded(function() {
         $(this).animate({'opacity': '1'}, 750);
         // .fadeIn(750)
       })
