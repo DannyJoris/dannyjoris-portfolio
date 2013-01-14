@@ -894,7 +894,7 @@ ul#blog-overview a:hover {
 .blog-post .date,
 .blog-overview .date {
   float: right;
-  margin-top: 7px 0 0 0;
+  margin: 7px 0 0 0;
 }
 
 /* Footer */
@@ -937,7 +937,7 @@ ul#blog-overview a:hover {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003590}}
 #external {
   margin: 0 auto 10px;
-  width: 250px;
+  width: 220px;
   height: 80px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003594}}
@@ -961,17 +961,21 @@ ul#blog-overview a:hover {
   opacity: 1;
   /* Chrome 4+, Firefox 2+, Safari 3.1+, Opera 9+, IE9+, iOS 3.2+, Android 2.1+ */
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003609}}
+#external a:first-child {
+  margin: 0;
+}
 
 /* From 480px */
 @media all and (min-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003616}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003619}}
   .footer-wrapper #footer .footer-links {
     display: inline-block;
     text-align: left;
     margin: 0;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003624}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/styles\.scss}line{font-family:\00003627}}
   #external {
     float: right;
     margin: 0;
