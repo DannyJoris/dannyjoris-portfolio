@@ -10,14 +10,9 @@
     });
 
     // Front graphics
-    $('#front-graphics img').each(function() {
-      $(this).imagesLoaded(function() {
-        $(this).animate({'opacity': '1'}, 750);
-        // .fadeIn(750)
-      })
+    $('#front-graphics img').imagesLoaded(function() {
+      $(this).animate({'opacity': '1'}, 750);
     });
-    
-    
 
     // Selected work
     var selectedWork = $('#freelance-selected-work');
