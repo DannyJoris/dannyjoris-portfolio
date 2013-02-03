@@ -266,7 +266,7 @@ dl {
           h2 {
             margin: 10px 0;
             color: #eee;
-            font-size: 150%;
+            font-size: 120%;
             font-style: italic;
             line-height: 120%;
             &:first-letter {
@@ -275,14 +275,14 @@ dl {
           }
           .p-indent {
             float: left;
-            height: 87px;
-            width: 55px;
+            height: 57px;
+            width: 30px;
             img {
               float: left;
               position: relative;
               left: -35px;
-              width: 87px;
-              height: 87px;
+              width: 57px;
+              height: 57px;
             }
           }
           p {
@@ -321,6 +321,21 @@ dl {
       @include zen-clear(none);
       @include zen-grid-item(1, 2);
     }
+    .item {
+      .item-inner {
+        h2 {
+          font-size: 140%;
+        }
+        .p-indent {
+          height: 77px;
+          width: 45px;
+          img {
+            width: 77px;
+            height: 77px;          
+          }
+        }
+      }
+    }
   }
 }
 
@@ -343,6 +358,21 @@ dl {
     .item-4 {
       @include zen-clear(none);
       @include zen-grid-item(1, 4);
+    }
+    .item {
+      .item-inner {
+        h2 {
+          font-size: 150%;
+        }
+        .p-indent {
+          height: 87px;
+          width: 55px;        
+          img {
+            width: 87px;
+            height: 87px;
+          }
+        }
+      }
     }
   }
 }
