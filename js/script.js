@@ -36,9 +36,11 @@
       // title hover: marker
       title.hover(function() {
         marker.css({'background-color': color});
+        title.css({'color': '#333'});
       }, function() {
         if ($this.hasClass('closed')) {
           marker.css({'background-color': originalColor});
+          title.css({'color': '#555'});
         }
       });
 

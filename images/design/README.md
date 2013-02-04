@@ -1,0 +1,1 @@
+This folder contains images that are part of the site design. Use sprites where possible and optimize with ImageOptim.

@@ -1,7 +1,8 @@
 ---
 layout: blog
-title: Sample post
+title: Some sample blog post.
 category: sample
+tn: sample-tn.jpeg
 tags: abc def
 description: lorem ipsum
 summary: lorem ipsum

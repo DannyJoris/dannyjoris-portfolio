@@ -10,10 +10,11 @@ layout: html
         <span class="date">{{ page.date | date: "%B %d %Y" }}</span>
       </header>
       {{ content }}
+      {% include disqus.html %}
     </article>
     <!-- aside 1 -->
     <aside id="aside1">
-
+      <a href="/blog" title="Back to blog overview.">← All blog posts</a>
     </aside>
   </div>
 </div>

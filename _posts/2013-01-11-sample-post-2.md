@@ -1,7 +1,8 @@
 ---
 layout: blog
-title: Sample post 2
+title: This is a sample post that has a bit of a longer title than others.
 category: sample
+tn: sample-tn.jpeg
 tags: abc ghi
 description: lorem ipsum 2
 summary: lorem ipsum 2

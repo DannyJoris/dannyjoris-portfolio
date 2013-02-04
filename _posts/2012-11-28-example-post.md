@@ -2,6 +2,7 @@
 layout: blog
 title: Example post
 category: example
+tn: sample-tn.jpeg
 tags: abc def
 description: lorem ipsum
 summary: lorem ipsum

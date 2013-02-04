@@ -5,9 +5,20 @@ title: Blog
 description: An overview of blog posts.
 summary: Blog posts overview.
 ---
-<ul id="blog-overview">
+<ul class="blog-posts">
 {% for post in site.posts %}
-<li><a href="{{post.url}}">{{post.title}}</a></li>
+<li>
+  <a href="{{post.url}}" title="{{post.title}}">
+    <span class="blog-overview-thumbnail">
+      {% if post.tn %}
+        <img src="/images/blog/{{ post.tn }}" alt="Thumbnail" />
+      {% else %}
+        <img src="/images/blog/sample-tn.jpeg" alt="Thumbnail" />
+      {% endif %}
+    </span>
+    <span class="blog-overview-title">{{post.title}}</span>
+  </a>
+</li>
 {% endfor %}
 </ul>
 <!--
@@ -15,7 +26,7 @@ summary: Blog posts overview.
   <h2>Sample</h2>
   <div class="sample">
     {% for item in site.categories.sample %}
-      <a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>  
+      <a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
     {% endfor %}
   </div>
 {% endif %}
@@ -24,7 +35,7 @@ summary: Blog posts overview.
   <h2>Example</h2>
   <div class="example">
     {% for item in site.categories.example %}
-      <a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>  
+      <a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
     {% endfor %}
   </div>
 {% endif %}
