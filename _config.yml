@@ -2,6 +2,16 @@ auto: true
 permalink: pretty
 destination: ./__site
 
+# Configuration
+google_analytics:
+  account: UA-8738645-5
+
+disqus:
+  id: dannyjoris
+
+twitter:
+  username: dannyjoris
+
 #  Work
 #  Images need to be placed in /images/work/
 #  array structure: http://stackoverflow.com/a/8869290
