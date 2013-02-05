@@ -3,6 +3,12 @@ permalink: pretty
 destination: ./__site
 
 # Configuration
+# configuration required for some pages
+domain: dannyjoris.ca
+title: Danny Joris
+author: Danny Joris
+email: mail@dannyjoris.ca
+
 google_analytics:
   account: UA-8738645-5
 

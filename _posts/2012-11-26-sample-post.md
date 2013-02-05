@@ -5,7 +5,6 @@ category: sample
 tn: sample-tn.jpeg
 tags: abc def
 description: lorem ipsum
-summary: lorem ipsum
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel tortor odio.
 Aliquam posuere sem ac leo fringilla auctor vel et justo. Nulla facilisi. Ut non
