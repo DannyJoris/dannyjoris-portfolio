@@ -1,0 +1,46 @@
+
+PEOPLE
+------
+
+This site was hand-crafted by Danny Joris.
+
+
+
+TECHNOLOGY
+----------
+
+Github Pages
+http://pages.github.com/
+
+Jekyll
+http://jekyllrb.com/
+
+normalize.css
+http://necolas.github.com/normalize.css/
+
+Zen Grids
+http://zengrids.com/
+
+Sass & Compass
+http://sass-lang.com/
+http://compass-style.org/
+
+FlexSlider
+http://www.woothemes.com/flexslider/
+
+jQuery
+http://jquery.com/
+
+
+
+GRAPHIC ASSETS
+--------------
+
+The Noun Project (icons)
+http://thenounproject.com/noun/rss/#icon-No104
+
+Open Sans (font)
+http://www.google.com/webfonts/specimen/Open+Sans
+
+Debut Light (pattern)
+http://subtlepatterns.com/debut-light/
