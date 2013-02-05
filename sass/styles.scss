@@ -408,14 +408,11 @@ h3 {
 }
 
 #main #content p.intro {
-  margin-bottom: 60px;
-  /*padding: 30px 0;*/
-  font-size: 110%;
+  margin-bottom: 50px;
+  font-size: 120%;
   line-height: 170%;
   font-style: italic;
   text-indent: 30px;
-/*  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc;*/
 
   &:first-letter {
     font-size: 175%;
@@ -546,13 +543,14 @@ ul#freelance-selected-work {
 #main {
   padding-top: 1em;
   padding-bottom: 1em;
-  font-size: 105%;
-  line-height: 125%;
+  font-size: 95%;
+  line-height: 135%;
   font-family: $sans-serif;
   color: $text-main;
   h1,
   h2 {
     font-family: $sans-serif;
+    margin: 1.2em 0 1em;
   }
   #content {
     p {
@@ -578,7 +576,7 @@ ul.blog-posts {
     list-style-image: none;
     a {
       color: $text-main;
-      font-size: 90%;
+      font-size: 95%;
       text-decoration: none;
       &:hover {
         color: $red;
@@ -612,7 +610,7 @@ ul.blog-posts {
       height: 200px;
       margin: 0;
       a {
-        font-size: 95%;
+
       }
     }
   }
@@ -626,7 +624,7 @@ ul.blog-posts {
       height: 200px;
       margin: 0;
       a {
-        font-size: 95%;
+
       }
     }
   }
@@ -640,7 +638,7 @@ ul.blog-posts {
       height: 200px;
       margin: 0;
       a {
-        font-size: 95%;
+
       }
     }
   }
@@ -654,7 +652,7 @@ ul.blog-posts {
       height: 220px;
       margin: 0;
       a {
-        font-size: 105%;
+
       }
     }
   }  
@@ -711,8 +709,8 @@ ul.blog-posts {
     padding-bottom: 10px;
     color: $text-main;
     font-family: $sans-serif;
-    font-size: 105%;
-    line-height: 125%;
+    font-size: 95%;
+    line-height: 135%;
     .footer-links {
       text-align: center;
       margin: 0 0 5px 0;
