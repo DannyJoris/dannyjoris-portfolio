@@ -1,0 +1,21 @@
+<nav class="pager">
+  <div class="blog-post-all">
+    <a href="/blog" title="Back to blog overview.">All blog posts</a>
+  </div>
+  <div class="blog-post-newer">
+    {% if page.next %} 
+      <a rel="prev" href="{{ page.next.url }}" title="Newer post"><< Newer</a>
+      <a rel="prev" href="{{ page.next.url }}" title="Newer post" class="pager-fixed"><</a>
+    {% else %}
+      <span class="disabled"><< Newer</span>
+    {% endif %}
+  </div>
+  <div class="blog-post-older">
+    {% if page.previous %} 
+      <a rel="next" href="{{ page.previous.url }}" title="Older post">Older >></a>
+      <a rel="next" href="{{ page.previous.url }}" title="Older post" class="pager-fixed">></a>
+    {% else %}
+      <span class="disabled">Older >></span>
+    {% endif %}
+  </div>
+</nav>

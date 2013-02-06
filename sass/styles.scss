@@ -405,6 +405,11 @@ h3 {
   }
 }
 
+a.drupal-association {
+  float: left;
+  padding-top: 5px;
+}
+
 #main #content p.intro {
   margin-bottom: 50px;
   font-size: 120%;
@@ -419,7 +424,6 @@ h3 {
     font-weight: bold;
   }
 }
-
 
 ul#freelance-clients {
   list-style: none;
@@ -558,7 +562,7 @@ ul#freelance-selected-work {
 }
 
 #aside1 {
-  padding-top: 25px;
+  /*padding-top: 25px;*/
 }
 
 ul.blog-posts {
@@ -658,39 +662,132 @@ ul.blog-posts {
 
 .blog-post,
 .blog-overview {
-  header {
-    width: 100%;
-    border-bottom: 1px dotted #ccc;
-    margin: 0 0 1em;
-    padding: 0.5em 0;
-    line-height: 175%;
-    background: url('../images/design/rss.svg') 0 0 no-repeat transparent;
-    .rss-feed {
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      margin: 0 0 0 5px;
+  article {
+    header {
+      width: 100%;
+      border-bottom: 1px dotted #ccc;
+      margin: 0 0 1em;
+      padding: 0.5em 0;
+      line-height: 175%;
+      background: url('../images/design/rss.svg') 0 0 no-repeat transparent;
+      .rss-feed {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        margin: 0 0 0 5px;
+        img {
+          width: 100%;
+        }
+      }
+    }
+    .date {
+      display: block;
+      margin: 7px 0 0 0;
+      line-height: 100%;
+      color: $text-medium;
+    }
+    section {
+      background-color: $white;
+      padding: 10px;
       img {
         width: 100%;
       }
     }
-  }
-  .date {
-    display: block;
-    margin: 7px 0 0 0;
-    line-height: 100%;
-    color: $text-medium;
-  }
-  section {
-    background-color: $white;
-    padding: 10px;
-    img {
-      width: 100%;
+    #disqus_thread {
+      min-height: 325px;
+      margin: 40px 0 0 0;
     }
   }
-  #disqus_thread {
-    min-height: 325px;
-    margin: 40px 0 0 0;
+  nav.pager {
+    padding: 5px 0 0;
+    .pager-fixed {
+      display: none;
+    }
+    a, span {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      margin: 0;
+      padding: 15px 0;
+      text-align: center;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #666;
+      background-color: #fff;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      &.disabled {
+        color: #ccc;
+        cursor: normal;
+      }
+    }
+    a:hover {
+      color: #333;
+    }
+    .blog-post-all,
+    .blog-post-newer,
+    .blog-post-older {
+      position: relative;
+      float: left;
+      height: 55px;
+    }
+    .blog-post-all {
+      width: 100%;
+      margin: 0 0 6px;
+    }
+    .blog-post-newer,
+    .blog-post-older {
+      width: 50%;
+    }
+    .blog-post-newer a,
+    .blog-post-newer span {
+      right: 3px;
+    }
+    .blog-post-older a,
+    .blog-post-older span {
+      left: 3px;
+    }
+  }
+}
+
+/* 1115px & over */
+@media all and (min-width: 1200px) {
+  .blog-post,
+  .blog-overview {
+    nav.pager {
+      .blog-post-newer,
+      .blog-post-older {
+        position: fixed;
+        top: 50%;
+        margin-top: -30px;
+        a, span {
+          display: none;
+        }
+        a.pager-fixed {
+          display: block;
+          position: relative;
+          width: 100%;
+        }
+      }
+      .blog-post-older {
+        right: 0;
+        width: 30px;
+        a {
+          border-right: 0px;
+          border-radius: 5px 0px 0px 5px;
+        }
+      }
+      .blog-post-newer {
+        left: 0;
+        width: 30px;
+        a {
+          border-left: 0px;
+          border-radius: 0px 5px 5px 0px;
+        }
+      }
+    }
   }
 }
 
