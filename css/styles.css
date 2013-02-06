@@ -163,7 +163,7 @@ header h2 {
   }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Applications\/MAMP\/htdocs\/github-pages\/dannyjoris-jekyll\/sass\/_layout\.scss}line{font-family:\0000393}}
-  #content.blog-overview {
+  .blog-overview #content {
     float: left;
     width: 100%;
     margin-left: 0%;

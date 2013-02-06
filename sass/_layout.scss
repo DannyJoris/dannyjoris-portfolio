@@ -90,7 +90,7 @@ $zen-gutter-width: 20px;
     @include zen-grid-item(1, 1);
   }
   
-  #content.blog-overview {
+  .blog-overview #content {
     @include zen-grid-item(4, 1);
   }
   
