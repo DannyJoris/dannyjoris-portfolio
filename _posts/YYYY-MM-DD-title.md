@@ -2,8 +2,8 @@
 layout: blog
 title: sample
 category: sample
-img: sample.png
-tn: sample-tn.png
+img: sample.jpg
+tn: sample-tn.jpg
 tags: abc def
 description: lorem ipsum
 lastmod: 2013-01-01

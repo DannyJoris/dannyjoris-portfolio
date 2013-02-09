@@ -285,10 +285,11 @@ dl {
             }
           }
           p {
+            margin: 5px 0 0;
             color: #b2b2b2;
             font-size: 105%;
             font-style: italic;
-            margin: 5px 0 0;
+            line-height: 120%;
           }
         }
       }
@@ -327,7 +328,7 @@ dl {
         }
         .p-indent {
           height: 77px;
-          width: 45px;
+          width: 50px;
           img {
             width: 77px;
             height: 77px;
@@ -365,7 +366,7 @@ dl {
         }
         .p-indent {
           height: 87px;
-          width: 55px;
+          width: 60px;
           img {
             width: 87px;
             height: 87px;
@@ -380,7 +381,8 @@ dl {
 
 h3 {
   border-bottom: 1px dotted #999;
-  padding: 0 0 5px 0;
+  padding: 0 0 10px 0;
+  margin: 1.2em 0;
   span {
     margin-top: 2px;
     font-size: 85%;
@@ -546,7 +548,7 @@ ul#freelance-selected-work {
   padding-top: 1em;
   padding-bottom: 1em;
   font-size: 95%;
-  line-height: 135%;
+  line-height: 160%;
   font-family: $sans-serif;
   color: $text-main;
   h1,
@@ -556,7 +558,7 @@ ul#freelance-selected-work {
   }
   #content {
     p {
-      line-height: 22px;
+
     }
   }
 }
@@ -606,6 +608,7 @@ ul.blog-posts {
       .blog-overview-title {
         display: block;
         margin: 0 10px;
+        line-height: 135%;
       }
     }
   }
