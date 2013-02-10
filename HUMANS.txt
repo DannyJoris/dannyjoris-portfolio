@@ -4,7 +4,6 @@ PEOPLE
 This site was hand-crafted by Danny Joris.
 
 
-
 TECHNOLOGY
 ----------
 
@@ -30,6 +29,8 @@ http://www.woothemes.com/flexslider/
 jQuery
 http://jquery.com/
 
+Disqus
+disqus.com
 
 
 GRAPHIC ASSETS
@@ -37,6 +38,7 @@ GRAPHIC ASSETS
 
 The Noun Project (icons)
 http://thenounproject.com/noun/rss/#icon-No104
+http://thenounproject.com/noun/document/#icon-No4502
 
 Open Sans (font)
 http://www.google.com/webfonts/specimen/Open+Sans
