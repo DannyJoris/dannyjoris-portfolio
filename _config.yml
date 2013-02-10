@@ -1,5 +1,5 @@
 auto: true
-permalink: pretty
+permalink: /blog/:year/:month/:day/:title
 destination: ./__site
 
 # Configuration
