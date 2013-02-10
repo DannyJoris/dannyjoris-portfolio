@@ -11,9 +11,10 @@ lastmod: 2013-02-09
 When I decided to redesign my web site a while ago I wanted to scale down on
 size, content and maintanance. The old site was 3 years old and in the meanwhile
 lots of new projects and services had come out of the woodworks. Seeing
-Developmentseed move away completely from Drupal to Jekyll for their sites was
-a real eye opener. While Drupal became more and more complex the idea of building
-static sites with limited functionality seemed very refreshing.
+[Developmentseed](http://developmentseed.org/) move away completely from Drupal
+to Jekyll for their sites was a real eye opener. While Drupal became more and
+more complex the idea of building static sites with limited functionality seemed
+very refreshing.
 
 ### Reasons for redesigning my web site
 - To scale down and remove clutter: one page that shows what I do and another listing blog posts is all I need.
@@ -31,6 +32,10 @@ the only functionality on the site was limited and I wasn't even using it often.
 
 ### Some things I learned while rewriting the site
 - Used Jekyll and Liquid for the first time. This was also the first time I used a proper templating system. It's very similar to Twig, so it was a good way to get my feet wet for templating in Drupal 8.
+- It forced me to refresh my memory about small things Drupal provides out of
+the box, such as meta tags, sitemap.xml, site structure, certain markup, etc.
+- Creating a Jekyll site for the first time still required quite a bit of work.
+Most of it was learning Jekyll & Liquid and planning the general architecture.
 - Used [Zen Grids](http://zengrids.com/) in a non-Drupal project, which turned 
 out to work excellent. Zen Grids is created by John Albin Wilkins who is the
 maintainer of the Drupal Zen base theme. Zen Grids is a key component of the Zen
@@ -42,12 +47,8 @@ because of it. In my case it was the flexslider that would lose its
 proportions after changing the viewport while hidden. This [small tip in the
 jQuery docs](http://docs.jquery.com/UI/API/1.8/Tabs#...my_slider.2C_Google_Map.2C_sIFR_etc._not_work_when_placed_in_a_hidden_.28inactive.29_tab.3F)
 help helped me fix that.
-- don't use .load() to check if an image is loaded. Images could be cached.
+- Don't use .load() to check if an image is loaded. Images could be cached.
 I used [imagesLoaded](https://github.com/desandro/imagesloaded) for this task.
-- Creating a jekyll site for the first time still required quite a bit of work.
-Most of it was learning Jekyll & Liquid and planning the general architecture.
-- It forced me to refresh my memory about small things drupal provides out of
-the box, such as meta tags, site structure, markup, etc.
 
 I really enjoyed working with Jekyll & Liquid and look forward to play with it
 even more. Maybe dig deeper in the plugin structure and such. I didn't use
@@ -58,12 +59,13 @@ the box.
 
 Having the code of your site publicly hosted on a github repo is interesting.
 While it can be made private, I kind of like the level of transparency it comes
-with. In a true open source spirit others can see how things are implemented and
-people can do pull requests to improve both the site and content. I don't expect
-this to happen, but it's possible.
+with. In a true open source spirit others can see how things are implemented
+(or see my mistakes for that matter). People can also do pull requests to 
+improve both the site and content. I don't expect the latter to happen, but it's
+possible.
 
-I still use Drupal everyday and I love it, but next time I need to create a
-small web site, I will definitely consider building it with Jekyll again.
+I still use Drupal every day and I still love it, but next time I need to create
+a small web site, I will definitely consider building it with Jekyll again.
 
 ### Further reading
 - Developmentseed: [Using Jekyll and GitHub Pages for our Site](http://developmentseed.org/blog/2011/09/09/jekyll-github-pages/)
