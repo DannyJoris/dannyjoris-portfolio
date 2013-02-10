@@ -110,7 +110,7 @@
   function flexsliderScroll(content) {
     var selectedWorkOffset = $('#freelance-selected-work').offset().top;
     var itemIndex = $('li.work').index(content.parent('.work'));
-    var itemHeight = 65; // @TODO: calculate this
+    var itemHeight = 67; // @TODO: calculate this
     $('html, body').animate({
       scrollTop: selectedWorkOffset + (itemHeight * itemIndex) - 10
     }, 450);
