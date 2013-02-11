@@ -764,46 +764,6 @@ ul.blog-posts {
   }
 }
 
-/* 1115px & over */
-@media all and (min-width: 1200px) {
-  .blog-post,
-  .blog-overview {
-    nav.pager {
-      .blog-post-newer,
-      .blog-post-older {
-        position: fixed;
-        top: 50%;
-        margin-top: -30px;
-        a, span {
-          display: none;
-        }
-        a.pager-fixed {
-          display: block;
-          position: relative;
-          width: 100%;
-        }
-      }
-      .blog-post-older {
-        right: 0;
-        width: 30px;
-        a {
-          border-right: 0px;
-          border-radius: 5px 0px 0px 5px;
-        }
-      }
-      .blog-post-newer {
-        left: 0;
-        width: 30px;
-        a {
-          border-left: 0px;
-          border-radius: 0px 5px 5px 0px;
-        }
-      }
-    }
-  }
-}
-
-
 /* Footer */
 
 .footer-wrapper {

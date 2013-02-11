@@ -9,30 +9,6 @@ $legacy-support-for-ie7: false;
 $zen-column-count: 12;
 $zen-gutter-width: 20px;
 
-
-/* Skip link */
-@media all and (min-width: 480px) {
-  #skip-link a {
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    @if $legacy-support-for-ie6 or $legacy-support-for-ie7 {
-      clip: rect(1px 1px 1px 1px); // IE6 and IE7 use the wrong syntax.
-    }
-    clip: rect(1px, 1px, 1px, 1px);
-
-    &:active,
-    &:focus {
-      position: static !important;
-      clip: auto;
-      height: auto;
-      width: auto;
-      overflow: auto;
-    }
-  }
-}
-
 /* general layout */
 #header,
 #introduction,
@@ -49,54 +25,35 @@ $zen-gutter-width: 20px;
   @include zen-grid-container();
 }
 
-#content aside {
-  font-weight: bold;
-  font-style: italic;
-  font-size: 1.2em;
-  @include zen-grid-flow-item(1, 3);
-  float: left;
-  margin: {
-    top: (1em/1.2);
-    bottom: (1em/1.2);
-  }
-}
-
 /* 480px - 639px */
 @media all and (min-width: 480px) and (max-width: 639px) {
-  $zen-column-count: 2;
+  $zen-column-count: 1;
 
   #content {
-    @include zen-grid-item(2, 1);
+    @include zen-grid-item(1, 1);
   }
   #aside1 {
     @include zen-clear(); // Clear left-floated elements (#content)
-    @include zen-grid-item(2, 1);
+    @include zen-grid-item(1, 1);
   }
-}
-
-/* 640px - 799px */
-@media all and (min-width: 640px) and (max-width: 799px) {
-
 }
 
 /* 800px - 959px */
 @media all and (min-width: 800px) {
-  $zen-column-count: 4;
-
-  #content {
-    @include zen-grid-item(3, 2);
+  #content,
+  #aside1,
+  .footer-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    &.blog-footer {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+    }
   }
-  #aside1 {
-    @include zen-grid-item(1, 1);
-  }
-  
   .blog-overview #content {
-    @include zen-grid-item(4, 1);
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
   }
-  
-}
-
-/* 960px & over */
-@media all and (min-width: 960px) {
-
 }
