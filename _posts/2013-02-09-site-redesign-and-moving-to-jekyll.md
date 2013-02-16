@@ -4,7 +4,7 @@ title: Site redesign and moving to Jekyll
 category: jekyll
 tags: Jekyll, Drupal, redesign
 description: Thoughts after redesigning my Drupal site and moving to Jekyll.
-lastmod: 2013-02-10
+lastmod: 2013-02-15
 ---
 When I decided to redesign my web site a while ago I wanted to scale down on
 size, content and maintanance. The old site was 3 years old and in the meanwhile
@@ -67,8 +67,9 @@ Drupal is still my application of choice for web development, but there are some
 use cases where a static site generator might be a great alternative.
 
 ### Further reading
+- Jekyll: [Github repo and wiki](https://github.com/mojombo/jekyll)
 - Developmentseed: [Using Jekyll and GitHub Pages for our Site](http://developmentseed.org/blog/2011/09/09/jekyll-github-pages/)
 - Developmentseed: [How We Build CMS Free Websites](http://developmentseed.org/blog/2012/07/27/build-cms-free-websites/)
-- Nettuts+: [Building Static Sites with Jekyll]()
+- Nettuts+: [Building Static Sites with Jekyll](http://net.tutsplus.com/tutorials/other/building-static-sites-with-jekyll/)
 - Tom MacWright: [Thinking Static](http://macwright.org/2013/01/08/thinking-static.html)
 - Tom MacWright: [Indexing and Searching Big Static Data](http://macwright.org/2012/11/14/indexing-searching-big-static-data.html)
