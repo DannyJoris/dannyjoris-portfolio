@@ -4,7 +4,7 @@ title: Site redesign and moving to Jekyll
 category: jekyll
 tags: Jekyll, Drupal, redesign
 description: Thoughts after redesigning my Drupal site and moving to Jekyll.
-lastmod: 2013-02-15
+lastmod: "2013-02-15"
 ---
 When I decided to redesign my web site a while ago I wanted to scale down on
 size, content and maintanance. The old site was 3 years old and in the meanwhile
@@ -34,7 +34,7 @@ the functionality on the site was limited and I wasn't even using it often.
 the box, such as meta tags, sitemap.xml, site structure, certain markup, etc.
 - Creating a Jekyll site for the first time still required quite a bit of work.
 Most of it was learning Jekyll & Liquid and planning the general architecture.
-- Used [Zen Grids](http://zengrids.com/) in a non-Drupal project, which turned 
+- Used [Zen Grids](http://zengrids.com/) in a non-Drupal project, which turned
 out to work excellent. Zen Grids was created by
 [John Albin Wilkins](http://john.albin.net/), who is the maintainer of the
 popular Drupal [Zen](http://drupal.org/project/zen) base theme. Zen Grids is a
