@@ -101,9 +101,10 @@ dl {
 .header-wrapper {
   /* background: url('../images/design/header-bg.jpg') top center repeat-x #000; */
   background-color: $black;
-
   -webkit-box-shadow: 0px 0px 10px 0px #000; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
           box-shadow: 0px 0px 10px 0px #000; /* Opera 10.5, IE9+, Firefox 4+, Chrome 6+, iOS 5 */
+  margin: 0 20px;
+  padding: 0 20px;
 }
 
 /* Header & footer */
@@ -220,8 +221,10 @@ dl {
   background: url('../images/design/bg-black.jpg') top center repeat $black;
   -webkit-box-shadow: 0 0 10px 0 #000; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
         box-shadow: 0 0 10px 0 #000; /* Opera 10.5, IE9+, Firefox 4+, Chrome 6+, iOS 5 */
+  margin: 0 20px;
   .introduction-wrapper-inner {
     background: url('../images/design/bg-black-top.jpg') top center repeat-x transparent;
+    padding: 0 20px;
   }
   #introduction {
     #front-logo-wrapper {
@@ -389,9 +392,18 @@ h3 {
   }
 }
 
+h3.title-company {
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 /* from 420px */
 @media all and (min-width: 420px) {
-  h3.title-discoverygarden {
+  h3.title-company {
     span {
       float: right;
     }
@@ -410,6 +422,14 @@ h3 {
 a.drupal-association {
   float: left;
   padding-top: 5px;
+}
+
+.main-wrapper {
+  -webkit-box-shadow: 0px 0px 6px 0px #999; /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  box-shadow: 0px 0px 6px 0px #999; /* Opera 10.5, IE9+, Firefox 4+, Chrome 6+, iOS 5 */
+  margin: 0 20px 10px;
+  padding: 0 20px 40px;
+  background-color: #fff;
 }
 
 #main #content p.intro {
@@ -767,10 +787,8 @@ ul.blog-posts {
 /* Footer */
 
 .footer-wrapper {
-  .footer-wrapper-inner {
-    border-top: 2px solid #fff;
-  }
-  border-top: 2px solid #ddd;
+  margin: 0 20px;
+  padding: 0 20px;
   #footer {
     padding-top: 10px;
     padding-bottom: 10px;
