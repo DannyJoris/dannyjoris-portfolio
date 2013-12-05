@@ -57,8 +57,6 @@ work:
   - name: merchantmanpub
     title: The Merchantman Pub
     color: "#053714"
-    url-title: merchantmanpub.com
-    url: http://merchantmanpub.com
     meta:
       - Drupal
       - Layout&nbsp;design
