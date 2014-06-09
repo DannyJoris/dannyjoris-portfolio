@@ -39,7 +39,7 @@ twitter:
 #      - image3.png
 work:
   - name: katiemcgarry
-    title: Katie McGarry
+    title: Katie McGarry (2011)
     color: "#edc667"
     url-title: katiemcgarrymusic.com
     url: http://katiemcgarrymusic.com
@@ -55,7 +55,7 @@ work:
       - kmg-music.png
       - kmg-bio.png
   - name: merchantmanpub
-    title: The Merchantman Pub
+    title: The Merchantman Pub (2010)
     color: "#053714"
     meta:
       - Drupal
@@ -71,7 +71,7 @@ work:
       - mmp-menu.png
       - mmp-pictures.png
   - name: miekewillems
-    title: Mieke Willems
+    title: Mieke Willems (2009)
     color: "#111a9d"
     meta:
       - Drupal
