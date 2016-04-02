@@ -6,6 +6,7 @@ collections:
 exclude:
 - vendor
 - vendor
+- vendor
 show_drafts: ''
 port: 4000
 permalink: "/blog/:year/:month/:day/:title"
