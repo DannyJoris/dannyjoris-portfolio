@@ -6,6 +6,7 @@ layout: blog
 slug: forestry-io
 tags: []
 draft: false
+author: Dave
 
 ---
 {% assign author = site.data.people[page.author] %}
