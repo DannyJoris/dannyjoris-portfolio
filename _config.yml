@@ -1,14 +1,4 @@
 ---
-domain: dannyjoris.ca
-title: Danny Joris
-author: Danny Joris
-email: mail@dannyjoris.ca
-google_analytics:
-  account: UA-8738645-5
-disqus:
-  id: dannyjoris
-twitter:
-  username: dannyjoris
 work:
 - name: katiemcgarry
   title: Katie McGarry (2011)
@@ -58,6 +48,16 @@ work:
   - mw-categories.png
   - mw-shop.png
   - mw-product.png
+twitter:
+  username: dannyjoris
+disqus:
+  id: dannyjoris
+google_analytics:
+  account: UA-8738645-5
+email: mail@dannyjoris.ca
+author: Danny Joris
+title: Danny Joris
+domain: dannyjoris.ca
 kramdown:
   auto_ids: true
   footnote_nr: '1'
@@ -77,6 +77,7 @@ permalink: "/blog/:year/:month/:day/:title"
 port: 4000
 show_drafts: ''
 exclude:
+- vendor
 - vendor
 - vendor
 - vendor
