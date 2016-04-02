@@ -1,5 +1,1 @@
----
-layout: nil
-permalink: .htaccess
----
 Redirect permanent /blog/*/feed /atom.xml

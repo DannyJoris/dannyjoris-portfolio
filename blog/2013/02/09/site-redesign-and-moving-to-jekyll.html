@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <!-- Title -->
+    <title> Site redesign and moving to Jekyll [Some changes] | Danny Joris</title>
+
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- Adding "maximum-scale=1" fixes the Mobile Safari auto-zoom bug: http://filamentgroup.com/examples/iosScaleBug/ -->
+    <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="Atom feed">
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <meta name="description" content="Thoughts after redesigning my Drupal site and moving to Jekyll." />
+    <meta property="og:title" content="Site redesign and moving to Jekyll [Some changes]"/>
+    <meta property="og:description" content="Thoughts after redesigning my Drupal site and moving to Jekyll."/>
+    
+    <meta property="og:site_name" content="Danny Joris"/>
+    <meta name="og:url" content="http://dannyjoris.ca/blog/2013/02/09/site-redesign-and-moving-to-jekyll">
+    <meta property="og:type" content="blog"/>
+    <meta name="twitter:title" content="Site redesign and moving to Jekyll [Some changes]">
+    <meta name="twitter:description" content="Thoughts after redesigning my Drupal site and moving to Jekyll.">
+    <meta name="twitter:url" content="http://dannyjoris.ca/blog/2013/02/09/site-redesign-and-moving-to-jekyll">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:creator" content="@dannyjoris">
+
+    <!-- Web fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="/libraries/flexslider/flexslider.css" media="all" type="text/css" />
+    <link rel="stylesheet" href="/css/normalize.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/css/styles.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="/css/print.css" media="print" type="text/css" />
+    <!--[if IE]><link rel="stylesheet" href="/css/ie.css" media="screen, projection" type="text/css" /><![endif]-->
+
+    <!-- Javascript -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="/libraries/flexslider/jquery.flexslider-min.js"></script>
+    <script type="text/javascript" src="/libraries/imagesloaded/jquery.imagesloaded.min.js"></script>
+    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+    <script type="text/javascript" src="/js/script.js"></script>
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8738645-5']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+  </head>
+  <body class="no-js not-front" >
+    <!-- Header -->
+<div class="wrapper header-wrapper">
+  <header id="header">
+    
+      <a href="/" id="logo" title="Home"></a>
+    
+    <!-- navigation -->
+<nav id="main-menu" role="navigation">
+  <a href="/blog" title="Blog" class="blog-link">Blog</a>
+</nav>
+  </header>
+</div>
+    <div class="wrapper main-wrapper">
+  <div id="main" class="blog-post">
+    <!-- content -->
+    <article id="content" role="main">
+      <header>
+        <h1>Site redesign and moving to Jekyll [Some changes]</h1>
+        <span class="date">February 09 2013</span>
+      </header>
+      <p>[some changes]
+When I decided to redesign my web site a while ago I wanted to scale down on
+size, content and maintanance. The old site was 3 years old and in the meanwhile
+lots of new projects and services had come out of the woodworks. Seeing
+<a href="http://developmentseed.org/">Developmentseed</a> move away completely from Drupal
+to Jekyll for their sites was a real eye opener. While Drupal became more and
+more complex the idea of building static sites with limited functionality seemed
+very refreshing.</p>
+
+<h3 id="reasons-for-redesigning-my-web-site">Reasons for redesigning my web site</h3>
+<ul>
+  <li>To scale down and remove clutter: one page that shows what I do and another listing blog posts is all I need.</li>
+  <li>To focus on a different audience with an updated skill set.</li>
+  <li>To improve the design and make better use of space by breaking out of the 960 grid.</li>
+  <li>To make the site responsive for easy access from any device.</li>
+</ul>
+
+<h3 id="reasons-for-moving-to-jekyll">Reasons for moving to Jekyll</h3>
+<ul>
+  <li>Fits in the idea of scaling down on functionality and clutter.</li>
+  <li>Simple and hassle free hosting with Github pages (if you’re familiar with git).</li>
+  <li>My old site was still running drupal 6 and required regular module updating while
+the functionality on the site was limited and I wasn’t even using it often.</li>
+  <li>This site serves just static html, thus no performance is lost on rendering logic.</li>
+  <li>It’s refreshing not needing to set up a database, install Drupal, add modules or update them over time.</li>
+</ul>
+
+<h3 id="some-things-i-learned-while-rewriting-the-site">Some things I learned while rewriting the site</h3>
+<ul>
+  <li>Used Jekyll and Liquid for the first time. This was also the first time I used a proper templating system. It’s very similar to Twig, so it was a good way to get my feet wet for templating in Drupal 8.</li>
+  <li>It forced me to refresh my memory about small things Drupal provides out of
+the box, such as meta tags, sitemap.xml, site structure, certain markup, etc.</li>
+  <li>Creating a Jekyll site for the first time still required quite a bit of work.
+Most of it was learning Jekyll &amp; Liquid and planning the general architecture.</li>
+  <li>Used <a href="http://zengrids.com/">Zen Grids</a> in a non-Drupal project, which turned
+out to work excellent. Zen Grids was created by
+<a href="http://john.albin.net/">John Albin Wilkins</a>, who is the maintainer of the
+popular Drupal <a href="http://drupal.org/project/zen">Zen</a> base theme. Zen Grids is a
+key component of the Zen theme, but is intended to be usable on any project.</li>
+  <li><a href="http://www.woothemes.com/flexslider/">Flexslider</a> is a responsive jQuery slideshow plugin that works just great.</li>
+  <li>Applied a nice solution for elements that are hidden with jQuery using
+<strong>display: none</strong>; . In my case it was the size of Flexslider that would not
+adapt after changing the viewport while hidden. This <a href="http://docs.jquery.com/UI/API/1.8/Tabs#...my_slider.2C_Google_Map.2C_sIFR_etc._not_work_when_placed_in_a_hidden_.28inactive.29_tab.3F">small tip in the
+jQuery docs</a>
+helped me fix that.</li>
+  <li>Don’t use .load() to check if an image is loaded. Images could be cached.
+I used <a href="https://github.com/desandro/imagesloaded">imagesLoaded</a> for this task.</li>
+</ul>
+
+<p>I really enjoyed working with Jekyll &amp; Liquid and look forward playing with it
+even more. Maybe digging deeper in the plugin structure and such. I didn’t use
+<a href="http://octopress.org/">Octopress</a> or
+<a href="http://jekyllbootstrap.com/">Jekyll bootstrap</a> - though they might be
+interesting - because the whole point was to keep things as simple as possible
+and not to have too much functionality out of
+the box.</p>
+
+<p>Having the code of your site publicly hosted on a github repo is interesting.
+While it can be made private, I kind of like the level of transparency it comes
+with being publicly accessable. In a true open source spirit others can see how
+things are implemented (or see my mistakes for that matter). People can also do
+pull requests to improve both the site and content. I don’t expect the latter to
+happen, but it is possible.</p>
+
+<p>Drupal is still my application of choice for web development, but there are some
+use cases where a static site generator might be a great alternative.</p>
+
+<h3 id="further-reading">Further reading</h3>
+<ul>
+  <li>Jekyll: <a href="https://github.com/mojombo/jekyll">Github repo and wiki</a></li>
+  <li>Developmentseed: <a href="http://developmentseed.org/blog/2011/09/09/jekyll-github-pages/">Using Jekyll and GitHub Pages for our Site</a></li>
+  <li>Developmentseed: <a href="http://developmentseed.org/blog/2012/07/27/build-cms-free-websites/">How We Build CMS Free Websites</a></li>
+  <li>Nettuts+: <a href="http://net.tutsplus.com/tutorials/other/building-static-sites-with-jekyll/">Building Static Sites with Jekyll</a></li>
+  <li>Tom MacWright: <a href="http://macwright.org/2013/01/08/thinking-static.html">Thinking Static</a></li>
+  <li>Tom MacWright: <a href="http://macwright.org/2012/11/14/indexing-searching-big-static-data.html">Indexing and Searching Big Static Data</a></li>
+</ul>
+
+      <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'dannyjoris';
+    var disqus_identifier = "/blog/2013/02/09/site-redesign-and-moving-to-jekyll";
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+    </article>
+    <!-- aside 1 -->
+    <aside id="aside1">
+      <nav class="pager">
+  <div class="blog-post-all">
+    <a href="/blog" title="Back to blog overview.">All blog posts</a>
+  </div>
+  <div class="blog-post-newer">
+     
+      <a rel="prev" href="/blog/2016/04/02/forestry-io" title="Newer post"><< Newer</a>
+      <a rel="prev" href="/blog/2016/04/02/forestry-io" title="Newer post" class="pager-fixed"><</a>
+    
+  </div>
+  <div class="blog-post-older">
+    
+      <span class="disabled">Older >></span>
+    
+  </div>
+</nav>
+    </aside>
+  </div>
+</div>
+    <!-- Footer -->
+<div class="wrapper footer-wrapper">
+  <div class="footer-wrapper-inner">
+    <footer id="footer">
+      <div class="footer-inner ">
+        <!-- external links -->
+<nav id="external">
+  <a href="https://ca.linkedin.com/in/dannyjoris" title="LinkedIn" rel="external" class="linkedin" target="_blank">
+    <img src="/images/design/linkedin-120.png" alt="LinkedIn" />
+  </a>
+  <a href="http://drupal.org/user/392988" title="Drupal" rel="external" class="drupal" target="_blank">
+    <img src="/images/design/druplicon-120.png" alt="Drupal" />
+  </a>
+  <a href="https://github.com/DannyJoris" title="GitHub" rel="external" class="github" target="_blank">
+    <img src="/images/design/octocat-120.png" alt="GitHub" />
+  </a>
+  <a href="https://twitter.com/dannyjoris" title="Twitter" rel="external" class="twitter" target="_blank">
+    <img src="/images/design/twitter-120.png" alt="Twitter" />
+  </a>
+</nav>
+
+        <div class="footer-links">
+          
+            <a href="/#main" class="resume" title="Resume">Resume</a>
+          
+          <small>© 2016 - Danny Joris</small>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+  </body>
+</html>

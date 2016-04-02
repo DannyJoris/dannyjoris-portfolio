@@ -1,26 +1,46 @@
----
-layout: nil
----
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.sitemaps.org/schemas/sitemap-image/1.1"
         xmlns:video="http://www.sitemaps.org/schemas/sitemap-video/1.1">
-  {% for page in site.pages %}
+  
     <url>
-      <loc>http://dannyjoris.ca{{ page.url }}</loc>
-      {% if page.lastmod %}
-        <lastmod>{{ page.lastmod | date_to_xmlschema }}</lastmod>
-      {% endif %}
+      <loc>http://dannyjoris.ca/.htaccess</loc>
+      
     </url>
-  {% endfor %}
-  {% for post in site.posts %}
+  
     <url>
-      <loc>http://dannyjoris.ca{{ post.url }}</loc>
-      {% if post.lastmod %}
-        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
-      {% else %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-      {% endif %}
+      <loc>http://dannyjoris.ca/atom.xml</loc>
+      
     </url>
-  {% endfor %}
+  
+    <url>
+      <loc>http://dannyjoris.ca/blog/</loc>
+      
+    </url>
+  
+    <url>
+      <loc>http://dannyjoris.ca/</loc>
+      
+    </url>
+  
+    <url>
+      <loc>http://dannyjoris.ca/sitemap.xml</loc>
+      
+    </url>
+  
+  
+    <url>
+      <loc>http://dannyjoris.ca/blog/2016/04/02/forestry-io</loc>
+      
+        <lastmod>2016-04-02T20:45:00+00:00</lastmod>
+      
+    </url>
+  
+    <url>
+      <loc>http://dannyjoris.ca/blog/2013/02/09/site-redesign-and-moving-to-jekyll</loc>
+      
+        <lastmod>2013-02-15T00:00:00+00:00</lastmod>
+      
+    </url>
+  
 </urlset>
