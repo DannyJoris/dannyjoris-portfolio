@@ -11,9 +11,9 @@ draft: false
 ---
 {% assign author = site.data.people[page.author] %}
 <a rel="author"
-  href="{{ author.twitter }}"
+  href="http://twitter.com/{{ author.twitter }}"
   title="{{ author.name }}">
-    {{ author.name }}
+    Author: {{ author.name }}
 </a>
 Lorem ipsum forestry io.
 
