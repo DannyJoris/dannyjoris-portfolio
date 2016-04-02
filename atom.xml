@@ -3,7 +3,7 @@
  <title>Danny Joris</title>
  <link href="http://dannyjoris.ca/atom.xml" rel="self"/>
  <link href="http://dannyjoris.ca/"/>
- <updated>2016-04-02T21:37:51+00:00</updated>
+ <updated>2016-04-02T21:44:46+00:00</updated>
  <id>http://dannyjoris.ca/</id>
  <author>
    <name>Danny Joris</name>
@@ -16,9 +16,9 @@
    <updated>2016-04-02T20:45:00+00:00</updated>
    <id>http://dannyjoris.ca/blog/2016/04/02/forestry-io</id>
    <content type="html">
-&lt;p&gt;&lt;a rel=&quot;author&quot; href=&quot;&quot; title=&quot;&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&amp;lt;/a&amp;gt;
+&lt;p&gt;&lt;a rel=&quot;author&quot; href=&quot;http://twitter.com/&quot; title=&quot;&quot;&gt;
+    Author: 
+&lt;/a&gt;
 Lorem ipsum forestry io.&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;http://forestry.io/sites/a0-lh3unc6t4rg/image/%2Fimages%2FD8byZtL.jpg&quot; alt=&quot;Sample image&quot; /&gt;&lt;/p&gt;
