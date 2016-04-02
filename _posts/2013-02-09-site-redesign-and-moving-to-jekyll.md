@@ -1,11 +1,19 @@
 ---
+title: Site redesign and moving to Jekyll [Some changes]
+date: '2013-02-09 00:00:00'
+categories: jekyll
 layout: blog
-title: Site redesign and moving to Jekyll
-category: jekyll
-tags: Jekyll, Drupal, redesign
+tags:
+- Jekyll
+- Drupal
+- redesign
 description: Thoughts after redesigning my Drupal site and moving to Jekyll.
-lastmod: "2013-02-15"
+lastmod: '2013-02-15 00:00:00'
+slug: site-redesign-and-moving-to-jekyll
+draft: false
+
 ---
+[some changes]
 When I decided to redesign my web site a while ago I wanted to scale down on
 size, content and maintanance. The old site was 3 years old and in the meanwhile
 lots of new projects and services had come out of the woodworks. Seeing

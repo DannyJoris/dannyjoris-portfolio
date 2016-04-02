@@ -1,7 +1,9 @@
 ---
-layout: blog-overview
 title: Blog
+layout: blog-overview
 description: An overview of all blog posts.
+draft: false
+
 ---
 <ul class="blog-posts">
 {% for post in site.posts %}
@@ -11,7 +13,7 @@ description: An overview of all blog posts.
       {% if post.tn %}
         <img src="/images/blog/{{ post.tn }}" alt="Thumbnail" />
       {% else %}
-        <img src="/images/blog/default-tn.jpg" alt="Thumbnail" />
+        <img src="http://forestry.io/sites/a0-lh3unc6t4rg/image/%2Fimages%2Fblog%2Fdefault-tn.jpg" alt="Thumbnail" />
       {% endif %}
     </span>
     <span class="blog-overview-date">{{ post.date | date: "%B %d %Y" }}</span>

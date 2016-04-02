@@ -1,88 +1,85 @@
-permalink: /blog/:year/:month/:day/:title
-destination: ./__site
-
-# Configuration
-# configuration required for some pages
+---
+collections:
+  posts:
+    output: true
+    permalink: "/blog/:year/:month/:day/:title"
+show_drafts: ''
+port: 4000
+permalink: "/blog/:year/:month/:day/:title"
+timezone: ''
+kramdown:
+  auto_ids: true
+  footnote_nr: '1'
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  coderay:
+    coderay_wrap: div
+    coderay_line_numbers: inline
+    coderay_line_number_start: '1'
+    coderay_tab_width: '4'
+    coderay_bold_every: '10'
+    coderay_css: style
 domain: dannyjoris.ca
 title: Danny Joris
 author: Danny Joris
 email: mail@dannyjoris.ca
-
 google_analytics:
   account: UA-8738645-5
-
 disqus:
   id: dannyjoris
-
 twitter:
   username: dannyjoris
-
-#  Work
-#  Images need to be placed in /images/work/
-#  array structure: http://stackoverflow.com/a/8869290
-#
-#  machinename:
-#    title: Human name
-#    description: "This is an optional description."
-#    color: #ff0000
-#    url-title: example.com
-#    url: http://example.com
-#    meta:
-#      - Drupal
-#      - Layout&nbsp;design
-#      - Site&nbsp;building
-#      - Theming
-#      - Custom&nbsp;development
-#    images:
-#      - image1.png
-#      - image2.png
-#      - image3.png
 work:
-  - name: katiemcgarry
-    title: Katie McGarry (2011)
-    color: "#edc667"
-    url-title: katiemcgarrymusic.com
-    url: http://katiemcgarrymusic.com
-    meta:
-      - Drupal
-      - Layout&nbsp;design
-      - Site&nbsp;building
-      - Theming
-      - Custom&nbsp;development
-    images:
-      - kmg-logo.png
-      - kmg-front.png
-      - kmg-music.png
-      - kmg-bio.png
-  - name: merchantmanpub
-    title: The Merchantman Pub (2010)
-    color: "#053714"
-    meta:
-      - Drupal
-      - Layout&nbsp;design
-      - Site&nbsp;building
-      - Theming
-    images:
-      - mmp-logo.png
-      - mmp-front.png
-      - mmp-footer.png
-      - mmp-newsletter-front.png
-      - mmp-newsletter.png
-      - mmp-menu.png
-      - mmp-pictures.png
-  - name: miekewillems
-    title: Mieke Willems (2009)
-    color: "#111a9d"
-    meta:
-      - Drupal
-      - Layout&nbsp;design
-      - Site&nbsp;building
-      - Theming
-      - Ecommerce
-      - Static&nbsp;to&nbsp;dynamic
-    images:
-      - mw-logo.png
-      - mw-front.png
-      - mw-categories.png
-      - mw-shop.png
-      - mw-product.png
+- name: katiemcgarry
+  title: Katie McGarry (2011)
+  color: "#edc667"
+  url-title: katiemcgarrymusic.com
+  url: http://katiemcgarrymusic.com
+  meta:
+  - Drupal
+  - Layout&nbsp;design
+  - Site&nbsp;building
+  - Theming
+  - Custom&nbsp;development
+  images:
+  - kmg-logo.png
+  - kmg-front.png
+  - kmg-music.png
+  - kmg-bio.png
+- name: merchantmanpub
+  title: The Merchantman Pub (2010)
+  color: "#053714"
+  meta:
+  - Drupal
+  - Layout&nbsp;design
+  - Site&nbsp;building
+  - Theming
+  images:
+  - mmp-logo.png
+  - mmp-front.png
+  - mmp-footer.png
+  - mmp-newsletter-front.png
+  - mmp-newsletter.png
+  - mmp-menu.png
+  - mmp-pictures.png
+- name: miekewillems
+  title: Mieke Willems (2009)
+  color: "#111a9d"
+  meta:
+  - Drupal
+  - Layout&nbsp;design
+  - Site&nbsp;building
+  - Theming
+  - Ecommerce
+  - Static&nbsp;to&nbsp;dynamic
+  images:
+  - mw-logo.png
+  - mw-front.png
+  - mw-categories.png
+  - mw-shop.png
+  - mw-product.png
+baseurl: http://a0-lh3unc6t4rg.preview.forestry.io
+exclude:
+- vendor
