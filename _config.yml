@@ -1,36 +1,4 @@
 ---
-collections:
-  posts:
-    output: true
-    permalink: "/blog/:year/:month/:day/:title"
-show_drafts: ''
-port: 4000
-permalink: "/blog/:year/:month/:day/:title"
-timezone: ''
-kramdown:
-  auto_ids: true
-  footnote_nr: '1'
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-  coderay:
-    coderay_wrap: div
-    coderay_line_numbers: inline
-    coderay_line_number_start: '1'
-    coderay_tab_width: '4'
-    coderay_bold_every: '10'
-    coderay_css: style
-domain: dannyjoris.ca
-title: Danny Joris
-author: Danny Joris
-email: mail@dannyjoris.ca
-google_analytics:
-  account: UA-8738645-5
-disqus:
-  id: dannyjoris
-twitter:
-  username: dannyjoris
 work:
 - name: katiemcgarry
   title: Katie McGarry (2011)
@@ -80,6 +48,37 @@ work:
   - mw-categories.png
   - mw-shop.png
   - mw-product.png
-baseurl: http://a0-lh3unc6t4rg.preview.forestry.io
+twitter:
+  username: dannyjoris
+disqus:
+  id: dannyjoris
+google_analytics:
+  account: UA-8738645-5
+email: mail@dannyjoris.ca
+author: Danny Joris
+title: Danny Joris
+domain: dannyjoris.ca
+kramdown:
+  auto_ids: true
+  footnote_nr: '1'
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  coderay:
+    coderay_wrap: div
+    coderay_line_numbers: inline
+    coderay_line_number_start: '1'
+    coderay_tab_width: '4'
+    coderay_bold_every: '10'
+    coderay_css: style
+timezone: ''
+permalink: "/blog/:year/:month/:day/:title"
+port: 4000
+show_drafts: ''
+collections:
+  posts:
+    output: true
+    permalink: "/blog/:year/:month/:day/:title"
 exclude:
 - vendor

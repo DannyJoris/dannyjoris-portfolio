@@ -10,7 +10,7 @@ tags:
 description: Thoughts after redesigning my Drupal site and moving to Jekyll.
 lastmod: '2013-02-15 00:00:00'
 slug: site-redesign-and-moving-to-jekyll
-draft: false
+draft: true
 
 ---
 [some changes]
