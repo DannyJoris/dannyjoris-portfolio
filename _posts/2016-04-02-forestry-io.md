@@ -16,3 +16,5 @@ draft: false
     {{ author.name }}
 </a>
 Lorem ipsum forestry io.
+
+![Sample image](http://forestry.io/sites/a0-lh3unc6t4rg/image/%2Fimages%2FD8byZtL.jpg)
