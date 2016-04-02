@@ -1,0 +1,15 @@
+---
+doeorg:
+  username: doeorg
+  name: Doe Org
+  members:
+  - name: John Doe
+    github: jdoe
+jekyll:
+  username: jekyll
+  name: Jekyll
+  members:
+  - name: Tom Preston-Werner
+    github: mojombo
+  - name: Parker Moore
+    github: parkr

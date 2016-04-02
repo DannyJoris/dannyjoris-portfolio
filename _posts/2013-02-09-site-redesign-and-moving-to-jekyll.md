@@ -1,7 +1,8 @@
 ---
 title: Site redesign and moving to Jekyll [Some changes]
 date: '2013-02-09 00:00:00'
-categories: jekyll
+categories:
+- jekyll
 layout: blog
 tags:
 - Jekyll
